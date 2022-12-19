@@ -1,0 +1,16 @@
+/*------------------------MOBILE-------------------------*/
+@mixin mobile--Loader{
+    @media screen and (max-width: map-get($breakpoints, small )){
+        top: 45%;
+        left: 40%;
+    }
+}
+
+/*-----------------------DESKTOP---------------------------*/
+
+@mixin desktop--Loader{
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        top: 45%;
+        left: 42.5%;
+    }
+}
