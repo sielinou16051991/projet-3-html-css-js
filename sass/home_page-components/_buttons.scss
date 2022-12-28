@@ -1,0 +1,24 @@
+.button--forContent{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    font-weight: 700;
+    background: #DB8888;
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 2%;
+    width: 182px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: .4rem;
+    z-index: 0.5;
+
+    &:hover {
+        background: #901C1C;
+        color: #fff;
+    }
+}

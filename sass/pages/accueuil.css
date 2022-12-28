@@ -1,0 +1,41 @@
+header {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+h1 {
+  color: red;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.button--forContent {
+  display: none;
+  flex-wrap: nowrap;
+  font-size: 18px;
+  font-weight: 700;
+  background: #DB8888;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 2%;
+  width: 182px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  border-radius: 0.4rem;
+  z-index: 1;
+}
+.button--forContent:hover {
+  background: red;
+  color: #fff;
+}/*# sourceMappingURL=accueuil.css.map */

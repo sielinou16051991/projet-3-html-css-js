@@ -1,0 +1,15 @@
+header {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+h1 {
+    color: red;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    width: fit-content;
+}

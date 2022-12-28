@@ -12,7 +12,8 @@
         
     <!-- CSS -->
 
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/general-style/general-style.css">
+    <link rel="stylesheet" href="public/accueuil-style/accueuil-style.css">
 
     <!-- FONT -->
 
@@ -21,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap"
         rel="stylesheet">
    
-   <title>Fisheye</title>
+   <title>Fisheye - Home</title>
 </head>
 <body>
     <!--CONSTRUCTION DE L'ANIMATION POUR LE CHARGEMENT DE LA PAGE-->
@@ -36,12 +37,49 @@
         </div>
     </div>
 
-    <header>
-        <nav><a href="#"><img src="" class="logo" alt="veillez patienter, réactualliser la page ou clicker sur le lien"></a></nav>
+    <header id="header" aria-hidden="false">
+        <a href="#" aria-label="Fisheye Home page">
+            <img src="assets/logo/logo.png" class="logo" alt="veillez patienter, réactualliser la page ou clicker sur le lien">
+        </a>
+        <nav aria-label="photographer categories">
+            <ul class="liste">
+                <a href="#">
+                    <li>#Portrai</li>
+                </a>
+                <a href="#">
+                    <li>#Art</li>
+                </a>
+                <a href="#">
+                    <li>#Fashion</li>
+                </a>
+                <a href="#">
+                    <li>#Architecture</li>
+                </a>
+                <a href="#">
+                    <li>#Travel</li>
+                </a>
+                <a href="#">
+                    <li>#Sport</li>
+                </a>
+                <a href="#">
+                    <li>#Animals</li>
+                </a>
+                <a href="#">
+                    <li>#Events</li>
+                </a>
+            </ul>
+        </nav>
         <h1>Nos photographes</h1>
     </header>
-    <main>
-        <div class="photographer__section">photographer section</div>
+    <main id="main" aria-hidden="false">
+        <a href="#photographers" class="button--forContent"
+            id="main-photographers-link">
+            Passer au contenu
+        </a>
+        <section class="photographer__section" 
+                    id="photographers" aria-label="photographers">
+            photographer section
+        </section>
     </main>
 </body>
 </html>
