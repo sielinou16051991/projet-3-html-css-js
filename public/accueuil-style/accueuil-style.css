@@ -1,0 +1,52 @@
+header {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+h1 {
+  color: red;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  width: fit-content;
+}
+
+.button--forContent {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 18px;
+  font-weight: 700;
+  background: #DB8888;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 2%;
+  width: 182px;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  border-radius: 0.4rem;
+  z-index: 0.5;
+}
+.button--forContent:hover {
+  background: #901C1C;
+  color: #fff;
+}
+
+.photographer__section {
+  display: flex;
+  flex-wrap: wrap;
+  background: red;
+  margin-bottom: 5rem;
+  margin-top: 7rem;
+  padding: 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=accueuil-style.css.map */
