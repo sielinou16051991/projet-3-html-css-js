@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,12 @@
     <meta name="author" content="Siélinou Noubissié Eric Romuald">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--SCRIPT-->
-      <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-        <script type="text" src=""></script>
-        
-    <!-- CSS -->
+      <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+       -->
+    <!-- <script type="module" src="./scripts/origin/Api.js"></script>
+      <script type="module" src="./scripts/pages/home/homePage.js"></script>
+      <script type="module" src="./scripts/pages/index.js"></script> -->
+      <!-- CSS -->
 
     <link rel="stylesheet" href="public/general-style/general-style.css">
     <link rel="stylesheet" href="public/accueuil-style/accueuil-style.css">
@@ -22,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap"
         rel="stylesheet">
    
-   <title>Fisheye - Home</title>
+        <title>Fisheye - Home</title>
 </head>
 <body>
     <!--CONSTRUCTION DE L'ANIMATION POUR LE CHARGEMENT DE LA PAGE-->
@@ -44,42 +46,95 @@
         <nav aria-label="photographer categories">
             <ul class="liste">
                 <a href="#">
-                    <li>#Portrai</li>
+                    <li data-filter="Portrait">#Portrait</li>
                 </a>
                 <a href="#">
-                    <li>#Art</li>
+                    <li data-filter="art">#Art</li>
                 </a>
                 <a href="#">
-                    <li>#Fashion</li>
+                    <li data-filter="fashion">#Fashion</li>
                 </a>
                 <a href="#">
-                    <li>#Architecture</li>
+                    <li data-filter="architecture">#Architecture</li>
                 </a>
                 <a href="#">
-                    <li>#Travel</li>
+                    <li data-filter="travel">#Travel</li>
                 </a>
                 <a href="#">
-                    <li>#Sport</li>
+                    <li data-filter="sport">#Sport</li>
                 </a>
                 <a href="#">
-                    <li>#Animals</li>
+                    <li data-filter="animals">#Animals</li>
                 </a>
                 <a href="#">
-                    <li>#Events</li>
+                    <li data-filter="events">#Events</li>
                 </a>
             </ul>
         </nav>
-        <h1>Nos photographes</h1>
-    </header>
-    <main id="main" aria-hidden="false">
         <a href="#photographers" class="button--forContent"
             id="main-photographers-link">
             Passer au contenu
         </a>
+        <h1>Nos photographes</h1>
+    </header>
+    <main id="main" aria-hidden="false">
         <section class="photographer__section" 
                     id="photographers" aria-label="photographers">
             photographer section
         </section>
     </main>
+    <!-- <script type="module" src="scripts/pages/home/filterTags.js"></script> -->
+    <script>
+        
+
+// AFFICHAGE DE TOUS LES PHOTOGRAPHES PAR DEFAUT
+
+    // construction de la section photogra
+    photographe;
+    phoyographerArticle;
+    photographe;
+    photographe;
+    photographe;
+    portrait;
+    photographe;
+    photographe;
+    city;
+    country;
+    photographe;
+    photographe;
+    tagline;
+    photographe;
+    price;
+    photographerArticle;
+    tags;
+    displayPhotographers(data) {
+        console.log("-----data-----", data);
+        let photographers = data.photographers;
+        photographers.map(photographe => {
+            let photographerSections = document.getElementById('photographers');
+            let photographerArticles = document.createElement('article');
+
+            this.photographerArticle.className = this.photographe.tags.join(' ') + ' articlePhotographer';
+
+            let templatePhotographer = `
+            <a href="photographers.html?id=${this.photographe.id}"
+                    title="${this.photographe.name}>
+                <img src="${this.photographe.portrait}" alt="${this.photographe.alt}">
+                <h2 class = "name"> ${this.photographe.name} <h2>
+            </a>
+            <p class="location"> ${this.photographe.city}, ${this.photographe.country} </p>
+            <p class="tagline">${this.photographe.tagline}</p>
+            <p class="price"> ${this.photographe.price}</p>
+
+                        `
+            photographerSections.appendChild(photographerArticles);
+            photographerArticles.innerHTML = templatePhotographer;
+        });
+
+
+    }
+
+
+    </script>
 </body>
 </html>
