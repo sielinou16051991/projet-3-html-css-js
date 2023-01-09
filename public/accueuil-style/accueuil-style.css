@@ -51,7 +51,7 @@ h1 {
 article img {
   background-color: #59ce26;
   height: 12.5rem;
-  width: 12.5;
+  width: 12.5rem;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 50%;
@@ -68,10 +68,7 @@ article img {
 
 .articlePhotographer a {
   text-decoration: none;
-}
-
-section :nth-child(6), :nth-child(2) img {
-  width: 12.5rem;
+  color: #59ce26;
 }
 
 @media screen and (min-width: 1023px) {
