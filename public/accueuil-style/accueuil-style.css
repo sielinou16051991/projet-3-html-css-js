@@ -49,7 +49,7 @@ h1 {
 }
 
 article img {
-  background-color: #59ce26;
+  background-color: blac;
   height: 12.5rem;
   width: 12.5rem;
   margin: 0 auto;
@@ -61,7 +61,7 @@ article img {
 
 .articlePhotographer {
   text-align: center;
-  width: 22rem;
+  width: 20rem;
   padding: 0.5rem;
   margin: 0.5rem;
 }
@@ -69,6 +69,11 @@ article img {
 .articlePhotographer a {
   text-decoration: none;
   color: #59ce26;
+}
+
+.articlePhotographer ul {
+  display: flex;
+  flex-flow: wrap;
 }
 
 @media screen and (min-width: 1023px) {

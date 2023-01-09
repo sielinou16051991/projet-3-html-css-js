@@ -3,8 +3,11 @@ import header from "../header/header.js";
 
 // AFFICHAGE DE TOUS LES PHOTOGRAPHES PAR DEFAUT
 export default class homePage{
+    
     // construction de la section photogra
     displayPhotographers(data){
+        
+        new header().entete();
         console.log("-----data-----", data);
         let photographers = data.photographers;
         console.log('***photographers***', photographers);
@@ -23,7 +26,7 @@ export default class homePage{
             </a>
             <p class="location"> ${photographe.city}, ${photographe.country} </p>
             <p class="tagline">${photographe.tagline}</p>
-            <p class="price"> ${photographe.price}</p>
+            <p class="price"> ${photographe.price}€/jour</p>
             <ul class = "filter">${photographe.tags.map(tag => 
                 `<li data-filter = "${tag}"> #${tag}</li>`
             ).join(" ")}
@@ -34,6 +37,5 @@ export default class homePage{
         });
         new Filter().filterTags();
 
-        new header().entete();
     }
 }

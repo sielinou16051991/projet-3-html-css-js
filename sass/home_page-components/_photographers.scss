@@ -22,7 +22,7 @@
 
   .articlePhotographer {
     text-align: center;
-    width: 22rem;
+    width: 20rem;
     padding: .5rem;
     margin: .5rem;
   }
@@ -30,7 +30,10 @@
     text-decoration: none;
     color: #59ce26;
   }
-  
+  .articlePhotographer ul {
+    display: flex;
+    flex-flow: wrap;
+  }
   @media screen and (min-width: map-get($breakpoints, desktop)) {
     .tags {
       display: flex;

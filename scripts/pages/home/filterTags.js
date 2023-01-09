@@ -4,13 +4,19 @@
          let filters = document.querySelector('ul');
          let articles = document.querySelector('.articlePhotographer');
 
+         let array = [];
          filters.addEventListener('click', event => {
+            console.log("**evenement**", event);
              let classValue = event.target.classList.value;
-
+                console.log("**--class de l'evenement--**", classValue.indexOf('actived'));
              if (classValue.indexOf('actived') === -1){
-                 event.target.classList.add('actived')
+                 event.target.value;
+                 console.log("actived======>", event.target.value);
+
+                 array.push(event.target.value);
+                 console.log("array======>", array);
              } else {
-                 event.target.classList.remove('actived')
+                 event.target.classList.remove('actived');
              }
 
              this.sortDomArticle(articles);
@@ -38,17 +44,28 @@
              x => classes.includes(x)
          );
 
-         return filters.length === intersection.length;
+         return filters.length == intersection.length;
      }
 
-     // afficher ou masquer l'article
+     // la fonction ci-dessous doit: 
+     // prendre un tableau d'article, et pour chaque article, 
+     // afficher l'article s'il a la meme valeur que le filtre, ou le masquer si non
      sortDomArticle(articles){
-         articles.forEach((article) => {
+        // var items = ["item1", "item2", "item3"]
+        //     var copie = [];
+
+        //     items.forEach(function(item){
+        //     copie.push(item);
+        //     });
+        //     console.log("copie-------", copie);
+            console.log("articles", articles);
+         articles.forEach(function(article){
+            console.log("***forEash**ARTICLE**in sortDomArticle()**", article);
              if (this.filterArticleCompare(article)){
-                 article.style.display = 'block';
+                article.style.display = 'block';
              } else {
-                 article.style.display = 'none';
+                article.style.display = 'none';
              }
-         })
+         });
      }
  }
