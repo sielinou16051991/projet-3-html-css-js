@@ -10,11 +10,15 @@
              let classValue = event.target.classList.value;
                 console.log("**--class de l'evenement--**", classValue.indexOf('actived'));
              if (classValue.indexOf('actived') === -1){
-                 event.target.value;
-                 console.log("actived======>", event.target.value);
+                 event.target.classList.add('actived');
+                 console.log("actived======>", event);
+                 console.log("actived class======>", event);
+                 
+                //  event.target.value;
+                //  console.log("actived======>", event.target.value);
 
-                 array.push(event.target.value);
-                 console.log("array======>", array);
+                //  array.push(event.target.value);
+                //  console.log("array======>", array);
              } else {
                  event.target.classList.remove('actived');
              }
