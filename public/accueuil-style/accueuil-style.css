@@ -41,12 +41,48 @@ h1 {
 .photographer__section {
   display: flex;
   flex-wrap: wrap;
-  background: red;
   margin-bottom: 5rem;
-  margin-top: 7rem;
+  margin-top: 5rem;
   padding: 0;
   width: 100%;
   justify-content: space-evenly;
+}
+
+article img {
+  background-color: #59ce26;
+  height: 12.5rem;
+  width: 12.5;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0.8rem rgba(134, 134, 134, 0.432);
+}
+
+.articlePhotographer {
+  text-align: center;
+  width: 22rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.articlePhotographer a {
+  text-decoration: none;
+}
+
+section :nth-child(6), :nth-child(2) img {
+  width: 12.5rem;
+}
+
+@media screen and (min-width: 1023px) {
+  .tags {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+  section {
+    margin-top: 5rem;
+  }
 }
 
 /*# sourceMappingURL=accueuil-style.css.map */

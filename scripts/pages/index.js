@@ -1,6 +1,5 @@
-import HomePage from "./home/homePage";
-import Api from "../origin/Api";
-
+import Api from "../origin/Api.js";
+import homePage from "./home/homePage.js";
 
 (function appDispatch() {
     console.log("=====");
@@ -8,9 +7,6 @@ import Api from "../origin/Api";
     console.log("======");
     new Api().getData().then((data) => {
         console.log("data", data);
-       new HomePage().displayPhotographers(data);
-    }).catch(() => {
-        console.error("ECHEC LOR DU CHARGEMENT DE DONNEES PAR L'API");
+       new homePage().displayPhotographers(data);
     });
-    console.log("appDispach", appDispatch());
 })();

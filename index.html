@@ -9,9 +9,7 @@
     <!--SCRIPT-->
       <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
        -->
-     <!-- <script type="module" src="./scripts/origin/Api.js"></script> -->
-      <!-- <script type="module" src="./scripts/pages/home/homePage.js"></script> -->
-      <!-- <script type="module" src="./scripts/pages/index.js"></script>  -->
+   
       <!-- CSS -->
 
     <link rel="stylesheet" href="public/general-style/general-style.css">
@@ -27,120 +25,13 @@
         <title>Fisheye - Home</title>
 </head>
 <body>
-    <!--CONSTRUCTION DE L'ANIMATION POUR LE CHARGEMENT DE LA PAGE-->
-    <div class="loard--controler">
-        <div class="loader">
-            <div class="dot"></div>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-
-    <header id="header" aria-hidden="false">
-        <a href="#" aria-label="Fisheye Home page">
-            <img src="assets/logo/logo.png" class="logo" alt="veillez patienter, réactualliser la page ou clicker sur le lien">
-        </a>
-        <nav aria-label="photographer categories">
-            <ul class="liste">
-                <a href="#">
-                    <li data-filter="Portrait">#Portrait</li>
-                </a>
-                <a href="#">
-                    <li data-filter="art">#Art</li>
-                </a>
-                <a href="#">
-                    <li data-filter="fashion">#Fashion</li>
-                </a>
-                <a href="#">
-                    <li data-filter="architecture">#Architecture</li>
-                </a>
-                <a href="#">
-                    <li data-filter="travel">#Travel</li>
-                </a>
-                <a href="#">
-                    <li data-filter="sport">#Sport</li>
-                </a>
-                <a href="#">
-                    <li data-filter="animals">#Animals</li>
-                </a>
-                <a href="#">
-                    <li data-filter="events">#Events</li>
-                </a>
-            </ul>
-        </nav>
-        <a href="#photographers" class="button--forContent"
-            id="main-photographers-link">
-            Passer au contenu
-        </a>
-        <h1>Nos photographes</h1>
-    </header>
     <main id="main" aria-hidden="false">
         <section class="photographer__section" 
                     id="photographers" aria-label="photographers">
-            photographer section
+            
         </section>
     </main>
+    <script type="module" src="./scripts/pages/index.js"></script>
     <!-- <script type="module" src="scripts/pages/home/filterTags.js"></script> -->
-    <script>
-        alert('BONJOUR');
-
-// AFFICHAGE DE TOUS LES PHOTOGRAPHES PAR DEFAUT
-console.log()
-    // construction de la section photogra
-    function displayPhotographers(data) {
-        console.log("-----data-----", data);
-        let photographers = data.photographers;
-        photographers.map(photographe => {
-            let photographerSections = document.getElementById('photographers');
-            let photographerArticles = document.createElement('article');
-
-            photographerArticles.className = photographe.tags.join(' ') + ' articlePhotographer';
-
-            let templatePhotographer = `
-            <a href="photographers.html?id=${photographe.id}"
-                    title="${photographe.name}>
-                <img src="${photographe.portrait}" alt="${photographe.alt}">
-                <h2 class = "name"> ${photographe.name} <h2>
-            </a>
-            <p class="location"> ${photographe.city}, ${photographe.country} </p>
-            <p class="tagline">${photographe.tagline}</p>
-            <p class="price"> ${photographe.price}</p>
-
-                        `
-            photographerSections.appendChild(photographerArticles);
-            photographerArticles.innerHTML = templatePhotographer;
-        });
-
-
-    }
-    displayPhotographers(
-        {
-            "photographers" : [
-        {
-        "name": "Mimi Keel",
-        "id": 243,
-        "city": "London",
-        "country": "UK",
-        "tags": ["portrait", "events", "travel", "animals"],
-        "tagline": "Voir le beau dans le quotidien",
-        "price": 400,
-        "portrait": "MimiKeel.jpg"
-      },
-      {
-        "name": "Ellie-Rose Wilkens",
-        "id": 930,
-        "city": "Paris",
-        "country": "France",
-        "tags": ["sports", "architecture"],
-        "tagline": "Capturer des compositions complexes",
-        "price": 250,
-        "portrait": "EllieRoseWilkens.jpg"
-      }]
-    })
-
-    </script>
 </body>
 </html>
