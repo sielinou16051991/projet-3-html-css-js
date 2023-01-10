@@ -25,7 +25,7 @@ export default class header {
            <nav aria-label="photographer categories">
                <ul class="liste">
                    <a href="#">
-                       <li data-filter="Portrait">#Portrait</li>
+                       <li data-filter="portrait">#Portrait</li>
                    </a>
                    <a href="#">
                        <li data-filter="art">#Art</li>
