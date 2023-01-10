@@ -2,9 +2,9 @@
      filterTags() {
          console.log("=====FILTER======");
          let filters = document.querySelector('ul');
-         let articles = document.querySelector('.articlePhotographer');
+         let articles = document.querySelectorAll('.articlePhotographer');
 
-         let array = [];
+        // let array = [];
          filters.addEventListener('click', event => {
             console.log("**evenement**", event);
              let classValue = event.target.classList.value;
@@ -54,7 +54,7 @@
      // la fonction ci-dessous doit: 
      // prendre un tableau d'article, et pour chaque article, 
      // afficher l'article s'il a la meme valeur que le filtre, ou le masquer si non
-     sortDomArticle(articles){
+        sortDomArticle(articles){
         // var items = ["item1", "item2", "item3"]
         //     var copie = [];
 
@@ -63,13 +63,13 @@
         //     });
         //     console.log("copie-------", copie);
             console.log("articles", articles);
-         articles.forEach(function(article){
-            console.log("***forEash**ARTICLE**in sortDomArticle()**", article);
-             if (this.filterArticleCompare(article)){
-                article.style.display = 'block';
-             } else {
-                article.style.display = 'none';
-             }
-         });
-     }
+            articles.forEach((article) => {
+             console.log("***forEash**ARTICLE**in sortDomArticle()**", article);
+                if (this.filterArticleCompare(article)){
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        }
  }
