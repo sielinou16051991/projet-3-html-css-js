@@ -59,7 +59,7 @@ export default class header {
         `
        // body = $("header: nth-child(1)");
         //body.appendChild(header);
-        console.log("header", header);
+       // console.log("header", header);
         body.prepend(section);
         section.innerHTML = header;
     }

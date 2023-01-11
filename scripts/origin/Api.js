@@ -8,6 +8,7 @@ export default class Api {
         
         let base_url = '../data/db.json';
         let res = await fetch(base_url);
+        console.log("res", res);
         let data = await res.json();
         console.log("-----data-----", data);
 

@@ -1,5 +1,5 @@
 import Filter from "./filterTags.js";
-import header from "../header/header.js";
+import header from "../header/header.js"
 
 // AFFICHAGE DE TOUS LES PHOTOGRAPHES PAR DEFAUT
 export default class homePage{
@@ -8,9 +8,10 @@ export default class homePage{
     displayPhotographers(data){
         
         new header().entete();
-        console.log("-----data-----", data);
+       
+    //    console.log("-----data-----", data);
         let photographers = data.photographers;
-        console.log('***photographers***', photographers);
+    //    console.log('***photographers***', photographers);
         photographers.map(photographe => {
             let photographerSections = document.getElementById('photographers');
             let photographerArticles = document.createElement('article');
@@ -18,7 +19,7 @@ export default class homePage{
             photographerArticles.className = photographe.tags.join(' ') + ' articlePhotographer';
 
             let templatePhotographer = `
-            <a href="photographers.html?id=${photographe.id}"
+            <a href="photographerPage.html?id=${photographe.id}"
                     title="${photographe.name}">
                 <img src="../../assets/media/PortraitOfPhotographer/${photographe.portrait}" 
                         alt="${photographe.alt}">
