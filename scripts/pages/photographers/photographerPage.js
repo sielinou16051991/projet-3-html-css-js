@@ -1,6 +1,6 @@
 
 (function photographerPage (){
-    console.log("javascript");
+    console.log("javascript photographerPage");
    let body = document.querySelector('body');
     body.innerHTML = `  
                    
@@ -27,8 +27,24 @@
             <div id="ph-prophile-header"></div>
         </section>
 
+        <!-- les differents tris -->
+        <section class="works-sort">
+            <span id="sort-text"> Trier part <span>
+            <div id="sort-wrapper">
+                <button class="sort-btn" aria-haspopup="listbox">Popularité</button>
+                <span class="fas fa-chevron-down arrow-down-open" role="button"></span>
+                <ul class="hidden-sort" role="listbox">
+                    <li class="sort" role="option">
+                        Popularité
+                        <span class="fas fa-chevron-up arrow-up-close"></span>
+                    </li>
+                    <li class="sort" role="option">Date</li>
+                    <li class="sort" role="option">Titre</li>
+                </ul>
+            </div>
+        </section>
         
-        <section id="ph-works" aria-label="photographer works">
+        <section id="photos-taken" aria-label="photos réalisées"> <section>
 
         </section>
     </main>

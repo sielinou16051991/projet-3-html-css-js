@@ -21,7 +21,7 @@ export default class homePage{
             let templatePhotographer = `
             <a href="photographerPage.html?id=${photographe.id}"
                     title="${photographe.name}">
-                <img src="../../assets/media/PortraitOfPhotographer/${photographe.portrait}" 
+                <img src="${photographe.portrait}" 
                         alt="${photographe.alt}">
                 <h2 class = "name"> ${photographe.name} <h2>
             </a>
