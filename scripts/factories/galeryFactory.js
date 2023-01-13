@@ -15,6 +15,7 @@ export default class GalleryFactory {
         dataMedia.forEach(element => {
             if (id == element.photographerId) {
                 let sectionPhotosTeken = document.getElementsById('photos-taken');
+                console.log('*******sectionPhotosTeken');
             }
         });
     }

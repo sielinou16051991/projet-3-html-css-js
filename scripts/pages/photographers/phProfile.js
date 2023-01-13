@@ -1,3 +1,5 @@
+import ContactMeFormModal from './ContactMeFormModal.js';
+
 export default class phProfile {
     photographerProfil (data){
         console.log("photographerProfil ++++++++++");
@@ -13,10 +15,11 @@ export default class phProfile {
                         <p class="ph-tagline">${photographers[0].tagline}</p>
                         <p >${photographers[0].tags.map(tag => `<a class="ph-tags" href="index.html">#${tag}</a>`).join(" ")}</p>
                     </div>
-                    <button class="ph-contact" title="contactez-moi">Contactez-moi</button>
+                    <button id="ph-contact" title="contactez-moi">Contactez-moi</button>
                     <a href="#" class="ph-image"><img src="${photographers[0].portrait}"></a>
                 </article>
         `
-        phProphileId.innerHTML= templatePhProphileId;
+        phProphileId.innerHTML = templatePhProphileId;
+        new ContactMeFormModal().modal(photographersData);
     }
 }
