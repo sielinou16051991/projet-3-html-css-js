@@ -1,0 +1,16 @@
+#form-dialog {
+    display: none;
+    justify-content: center;
+    background-color: red;
+    border-radius: .3rem;
+    left: 50%;
+    max-width: 42rem;
+    min-width: 18.75rem;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transform: translate(-50%);
+    z-index: 5;
+    width: 100%;
+
+}
