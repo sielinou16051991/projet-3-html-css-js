@@ -5,7 +5,7 @@
     body.innerHTML = `  
                    
     <!--CONSTRUCTION DE L'ANIMATION POUR LE CHARGEMENT DE LA PAGE-->
-    <div class="loard--controler">
+    <!---<div class="loard--controler">
         <div class="loader">
             <div class="dot"></div>
             <div class="dots">
@@ -14,7 +14,7 @@
                 <span></span>
             </div>
         </div>
-    </div>
+    </div> --->
 
     <header id="header" aria-hidden="false">
         <a href="#" aria-label="Fisheye Home page">
@@ -29,7 +29,7 @@
 
         <!-- les differents tris -->
         <section class="works-sort">
-            <span id="sort-text"> Trier part <span>
+            <span id="sort-text"> Trier par <span>
             <div id="sort-wrapper">
                 <button class="sort-btn" aria-haspopup="listbox">Popularité</button>
                 <span class="fas fa-chevron-down arrow-down-open" role="button"></span>
@@ -55,7 +55,7 @@
             <form action="photographer-page.html" method="POST" id="contact-from">
                 <header aria-label="en-tête du formulaire de contact">
                     <h1 id="form-title">
-                        <span>Contactez-moi</span>
+                        <span>Contactez-moi :</span>
                         <span id="ph-form-name"></span>
                     </h1>
                     <button id="close-btn" title="Fermer le formulaire" type="button">
@@ -75,7 +75,7 @@
                 <!-------EMAIL---------->
                 <div class="formData" data-error="Vous devez entrer votre email valide." data-error-visible="false">
                     <label for="email" id="label-email">Email</label>
-                    <input name="last-email" id="last-email" aria-labelledby="label-email" placeholder="exemple@email.com">
+                    <input name="last-email" id="email" aria-labelledby="label-email" placeholder="exemple@email.com">
                 </div>
                 <!-------MESSAGE---------->
                 <div class="formData" data-error="Vous devez entrer votre message." data-error-visible="false">

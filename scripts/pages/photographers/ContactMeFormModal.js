@@ -7,8 +7,10 @@ export default class ContactMeFormModal {
         let closeBtn = document.getElementsByClassName("close-form-icon");
 
         if (modalBtn) {
-            modalBtn.addEventListener('click', this.launchModal());
+            modalBtn.addEventListener('click', this.launchModal);
+            console.log("----------modal--------------");
             this.formPhName(data);
+            console.log('**//data//**', data);
         }
         if (closeBtn) {
             closeBtn[0].addEventListener('click', this.closeModal);
@@ -17,12 +19,14 @@ export default class ContactMeFormModal {
 
     // OUVERTURE DE LA MODAL ===> la box
     launchModal(){
+        console.log('-----/////launchModal///////-----');
         let modalbg = document.getElementById("form-dialog");
         modalbg.style.display = 'block';
     }
 
     // FERMETURE DE LA MODALE
     closeModal() {
+        console.log('close modal++++')
         let modalbg = document.getElementById('form-dialog');
         modalbg.style.display = 'none';
     }
@@ -35,7 +39,7 @@ export default class ContactMeFormModal {
         });
         let phName = document.getElementById('ph-form-name');
         console.log('photographers[0]', photographers[0]);
-       let phNameTemplate = `: ${photographers[0].name}`;
+       let phNameTemplate = ` ${photographers[0].name}`
         phName.innerHTML = phNameTemplate;
     }
 }

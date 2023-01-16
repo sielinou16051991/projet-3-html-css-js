@@ -1,8 +1,80 @@
+form {
+    background-color: #db8876;
+    display: flex;
+    flex-direction: column;
+    border-radius: .1rem;
+    padding: 1.5rem 2.2rem 2.2rem;
+
+
+        
+    #ph-form-name{
+        display: block;
+    }
+
+    #close-btn{
+        background: #db8876;
+        border: none;
+    }
+    .close-form-icon{
+        color: #fff;
+        font-size: 2rem;
+        margin-top: .6rem;
+    }
+
+    .close-form-icon:hover,
+    .form-submit:hover {
+        cursor: pointer;
+    }
+
+    .form-submit{
+        align-self: center;
+        background: #901c1c;
+        color: #fff;
+        font-size: 1rem;
+        height: 2.2rem;
+        margin-top: 1.6rem;
+        width: 10.6rem;
+    }
+
+    button {
+        border: none;
+        background: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: -.3rem .3rem 1.25rem 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    input, textarea {
+        border: none;
+        border-radius: .3rem;
+        font-size: 1.2rem;
+        padding: .3rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+        margin: .3rem 0 .2rem;
+    }
+
+    input[data-error]::after {
+        color: #901c1c;
+        content: attr(data-error);
+        font-size: .6rem;
+    }
+}
 #form-dialog {
     display: none;
     justify-content: center;
-    background-color: red;
     border-radius: .3rem;
+    border: none;
     left: 50%;
     max-width: 42rem;
     min-width: 18.75rem;
@@ -13,4 +85,54 @@
     z-index: 5;
     width: 100%;
 
+}
+
+.formData {
+    display: flex;
+    flex-direction: column;
+}
+
+.formData[data-error]::after {
+    color: #901c1c;
+    content: attr(data-error);
+    display: block;
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 0.3;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    text-align: left;
+    transition: .8s;
+    opacity: 0;
+}
+
+.formData[data-error-visible="true"]::after{
+    opacity: 1;
+}
+
+@media (min-width: 600px) {
+    #form-dialog {
+        top: 4.3rem;
+        width: 95%;
+
+    }
+
+    form .close-form-icon {
+        font-size: 2.4rem;
+    }
+
+    form .form-submit {
+        align-self: flex-start;
+        height: 4.4rem;
+    }
+
+    form h1 {
+        font-size: 2.6rem;
+    }
+
+    form {
+        label, input, textarea {
+            font-size: 1.6rem;
+        }
+    }
 }

@@ -7,7 +7,7 @@ export default class header {
       let  header = `
                    
        <!--CONSTRUCTION DE L'ANIMATION POUR LE CHARGEMENT DE LA PAGE-->
-       <div class="loard--controler">
+     <!---  <div class="loard--controler">
            <div class="loader">
                <div class="dot"></div>
                <div class="dots">
@@ -17,7 +17,7 @@ export default class header {
                </div>
            </div>
        </div>
-   
+   --->
        <header id="header" aria-hidden="false">
            <a href="#" aria-label="Fisheye Home page">
                <img src="assets/logo/logo.png" class="logo" alt="veillez patienter, réactualliser la page ou clicker sur le lien">
