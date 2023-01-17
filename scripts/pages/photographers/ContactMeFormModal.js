@@ -7,7 +7,7 @@ export default class ContactMeFormModal {
         let closeBtn = document.getElementsByClassName("close-form-icon");
 
         if (modalBtn) {
-            modalBtn.addEventListener('click', this.launchModal);
+            modalBtn.addEventListener('click', this.openModal);
             console.log("----------modal--------------");
             this.formPhName(data);
             console.log('**//data//**', data);
@@ -18,8 +18,8 @@ export default class ContactMeFormModal {
     }
 
     // OUVERTURE DE LA MODAL ===> la box
-    launchModal(){
-        console.log('-----/////launchModal///////-----');
+    openModal(){
+        console.log('-----/////OPEN MODAL///////-----');
         let modalbg = document.getElementById("form-dialog");
         modalbg.style.display = 'block';
     }
@@ -33,6 +33,7 @@ export default class ContactMeFormModal {
 
     // AFFICHER LE NOM DES PHOTOGRAPHE SOUS LE FORMULAIRE
     formPhName(data) {
+        console.log('///formPhName////');
         let id = window.location.search.split('id=')[1]; // récupération de l'identifiant du photographe
         let photographers = id ? data : data.filter(photographer => {
             photographer.id == id;

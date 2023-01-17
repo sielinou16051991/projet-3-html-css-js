@@ -81,7 +81,7 @@
                 <div class="formData" data-error="Vous devez entrer votre message." data-error-visible="false">
                     <label for="message" id="label-message">Votre message</label>
                     <textarea class="form-textarea" cols="20" rows="5" name="message" id="message" aria-labelledby="label-message"
-                     placeholder="Votre message" readonly>Votre message...
+                     placeholder="Votre message" >Votre message...
                     </textarea>
                 </div>
                 <!-------ENVOYER---------->

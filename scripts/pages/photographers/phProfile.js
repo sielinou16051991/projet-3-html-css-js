@@ -1,5 +1,5 @@
 import ContactMeFormModal from './ContactMeFormModal.js';
-
+import From from './Form.js';
 export default class phProfile {
     photographerProfil (data){
         console.log("photographerProfil ++++++++++");
@@ -21,5 +21,6 @@ export default class phProfile {
         `
         phProphileId.innerHTML = templatePhProphileId;
         new ContactMeFormModal().modal(photographersData);
+        new From().fields();
     }
 }

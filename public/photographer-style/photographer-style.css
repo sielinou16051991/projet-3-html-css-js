@@ -287,7 +287,7 @@ form input[data-error]::after {
   .ph-profil button {
     height: 55px;
     left: 42rem;
-    position: absolute;
+    position: fixed;
     top: 9.8rem;
   }
 }
