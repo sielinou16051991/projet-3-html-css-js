@@ -6,7 +6,7 @@ export default class Api {
         console.log("===API===");
         console.log("=====");
         
-        let base_url = '../data/db.json';
+        let base_url = '/data/db.json';
         let res = await fetch(base_url);
         console.log("res", res);
         let data = await res.json();
