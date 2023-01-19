@@ -1,7 +1,7 @@
 header {
   align-items: center;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 header img {
   width: 12.5rem;
@@ -106,6 +106,19 @@ form {
   border-radius: 0.1rem;
   padding: 1.5rem 2.2rem 2.2rem;
 }
+form header {
+  display: flex;
+  justify-content: space-between;
+  margin: -0.3rem 0.3rem 1.25rem 0;
+}
+form h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+form span {
+  color: #181212;
+  font-weight: bold;
+}
 form #ph-form-name {
   display: block;
 }
@@ -129,20 +142,11 @@ form .form-submit {
   font-size: 1rem;
   height: 2.2rem;
   margin-top: 1.6rem;
-  width: 10.6rem;
+  width: 8.6rem;
 }
 form button {
   border: none;
   background: none;
-}
-form header {
-  display: flex;
-  justify-content: space-between;
-  margin: -0.3rem 0.3rem 1.25rem 0;
-}
-form h1 {
-  font-size: 2.2rem;
-  font-weight: 400;
 }
 form input, form textarea {
   border: none;
@@ -166,8 +170,10 @@ form input[data-error]::after {
   border-radius: 0.3rem;
   border: none;
   left: 50%;
-  max-width: 42rem;
-  min-width: 18.75rem;
+  max-width: 35rem;
+  min-width: 12.75rem;
+  min-height: 15rem;
+  max-height: 45rem;
   position: absolute;
   right: 50%;
   top: 0;
@@ -209,7 +215,7 @@ form input[data-error]::after {
   }
   form .form-submit {
     align-self: flex-start;
-    height: 4.4rem;
+    height: 2.4rem;
   }
   form h1 {
     font-size: 2.6rem;

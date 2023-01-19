@@ -44,8 +44,8 @@
             </div>
         </section>
         
-        <!-------PHOTOS PRISE---->
-        <section id="photos-taken" aria-label="photos réalisées"> <section>
+        <!-------PHOTOS PRISE----> 
+        <section id="photos-taken" aria-label="photos réalisées">
 
         </section>
 
@@ -61,7 +61,7 @@
                     <button id="close-btn" title="Fermer le formulaire" type="button">
                         <span class="fas fa-times close-form-icon" aria-hidden="true"></span>
                     </button>
-                </header>
+                </header> 
                 <!-------PRENOM---------->
                 <div class="formData" data-error="Vous devez entrer votre prénom." data-error-visible="false">
                     <label for="first-name" id="label-firstname">Prénom</label>
@@ -80,8 +80,9 @@
                 <!-------MESSAGE---------->
                 <div class="formData" data-error="Vous devez entrer votre message." data-error-visible="false">
                     <label for="message" id="label-message">Votre message</label>
-                    <textarea class="form-textarea" cols="20" rows="5" name="message" id="message" aria-labelledby="label-message"
-                     placeholder="Votre message" >Votre message...
+                    <textarea class="form-textarea" cols="20" rows="5" name="message" id="message" 
+                                aria-labelledby="label-message"
+                                placeholder="Votre message..." >
                     </textarea>
                 </div>
                 <!-------ENVOYER---------->
