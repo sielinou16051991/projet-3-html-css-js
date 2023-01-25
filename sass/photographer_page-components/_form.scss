@@ -4,7 +4,6 @@ form {
     flex-direction: column;
     border-radius: .1rem;
     padding: 1.5rem 2.2rem 2.2rem;
-    height: 500px;
 
 
     header {
@@ -20,7 +19,6 @@ form {
 
     span {
         color: #181212;
-        font-weight: bold;
     }
         
     #ph-form-name{
@@ -75,6 +73,7 @@ form {
         font-size: .6rem;
     }
 }
+
 #form-dialog {
     display: none;
     justify-content: center;

@@ -105,7 +105,6 @@ form {
   flex-direction: column;
   border-radius: 0.1rem;
   padding: 1.5rem 2.2rem 2.2rem;
-  height: 500px;
 }
 form header {
   display: flex;
@@ -118,7 +117,6 @@ form h1 {
 }
 form span {
   color: #181212;
-  font-weight: bold;
 }
 form #ph-form-name {
   display: block;
