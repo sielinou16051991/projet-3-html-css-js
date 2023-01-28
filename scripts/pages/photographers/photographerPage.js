@@ -50,6 +50,10 @@
         </section>
 
         <!------BOX------->
+        <div id="box" aria-label=" le photographe ses likes et le prix du photographe">
+        </div>
+        
+        <!------MODALE------->
         <div id="form-dialog" aria-label="contactez-moi pour" aria-labelledby="form-title"
             aria-hidden="true">
             <form action="photographer-page.html" method="POST" id="contact-from">

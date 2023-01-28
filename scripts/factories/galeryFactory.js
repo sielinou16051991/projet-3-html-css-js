@@ -18,7 +18,7 @@ export default class GalleryFactory {
                 let sectionPhotosTeken = document.getElementsById('photos-taken');
                 console.log('*******sectionPhotosTeken');
                 let articlePhTeken = document.createElement('article');
-                let mediaHTML = mediaFactory.renderMedia('element');
+                let mediaHTML = mediaFactory.renderMedia(element);
 
                 let tekenTemplate =
                         ` <!--- CREATION D'UN LIEN IMAGE OU VIDEO ------>
@@ -33,9 +33,14 @@ export default class GalleryFactory {
                         `
 
                         articlePhTeken.innerHTML = tekenTemplate;
-                        sectionPhotosTeken.appendChild(articlePhTeken)
+                        sectionPhotosTeken.appendChild(articlePhTeken);
+                        articlePhTeken.classList.add("ph-teken-elt");
+                        this.totalLike += parseInt(element.likes);
+                        currentMedia.push(mediaHTML.outerHTML);
+                        currentMediaName.push(element.title)
 
             }
         });
+        return this;
     }
 }

@@ -1,4 +1,7 @@
+import GalleryFactory from "../../factories/galeryFactory.js";
+
 export default class DifferentSort {
+    // Evénements, ouvre/ferme le dropDownMenu
     dropDown(data){
         let arrowOpen = document.getElementsByClassName('sort-btn');
         let arrowClose = document.getElementsByClassName('arrow-up-close');
@@ -6,6 +9,7 @@ export default class DifferentSort {
 
         if (arrowOpen) {
             arrowOpen[0].addEventListener('click', () => {
+                console.log('click');
                 hiddenSort[0].style.display = "block";
             });
             this.sortMedias(data);
@@ -23,9 +27,9 @@ export default class DifferentSort {
         let media = data.media;
         let btnSort = document.querySelector('.sort-btn');
         let hiddenSort = document.getElementsByClassName('hidden-sort');
-        let sortbtn = Array.from(document.getElementsByClassName('sort'));
+        let sortBtn = Array.from(document.getElementsByClassName('sort'));
 
-        sortbtn.forEach((btn, index) => btn.addEventListener('click', () => {
+        sortBtn.forEach((btn, index) => btn.addEventListener('click', () => {
             hiddenSort[0].style.display = "none"
             if (index == 0) {
                 btnSort.innerHTML = `Popularité`;
@@ -60,7 +64,7 @@ export default class DifferentSort {
 
     displaySortMedia(mediaArraySort) {
         // AFFICHAGE PHOTOGRAPHES TRAVAILLE AVEC SORT
-        document.getElementById('photos-taken').innerHTML = " ";
+        document.getElementById('photos-taken').innerHTML = "";
         new GalleryFactory().builder(mediaArraySort);
     }
 }
