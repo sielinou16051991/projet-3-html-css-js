@@ -1,5 +1,5 @@
-import ImageFactory from "./ImageFactory";
-import VideoFactory from "./VideoFactory";
+import ImageFactory from "./ImageFactory.js";
+import VideoFactory from "./VideoFactory.js";
 
 export default class MediaFactory {
     

@@ -3,18 +3,21 @@ import GalleryFactory from "../../factories/galeryFactory.js";
 export default class DifferentSort {
     // Evénements, ouvre/ferme le dropDownMenu
     dropDown(data){
+        console.log('differentSort');
         let arrowOpen = document.getElementsByClassName('sort-btn');
         let arrowClose = document.getElementsByClassName('arrow-up-close');
         let hiddenSort = document.getElementsByClassName('hidden-sort');
 
         if (arrowOpen) {
+            console.log('click open');
             arrowOpen[0].addEventListener('click', () => {
-                console.log('click');
+                console.log('click open');
                 hiddenSort[0].style.display = "block";
             });
             this.sortMedias(data);
         }
         if (arrowClose) {
+            console.log('click close');
             arrowClose[0].addEventListener('click', () => {
                 hiddenSort[0].style.display = 'none';
             });
