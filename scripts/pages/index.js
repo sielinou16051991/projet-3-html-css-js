@@ -19,5 +19,7 @@ import DifferentSort from "./photographers/DifferentSort.js";
         } else {
             new homePage().displayPhotographers(data);
         }
+    }).catch(() => {
+        console.error('ERREUR DE CHARGEMENT DE L\'API');
     });
 })();

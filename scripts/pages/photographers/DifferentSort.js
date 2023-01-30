@@ -25,6 +25,7 @@ export default class DifferentSort {
 
     // tri sur les médias en fonction de la popularitée, des donnée et de la taille
     sortMedias(data) {
+        console.log('sort Data', data);
         let mediaArraySort = [];
         let media = data.media;
         let btnSort = document.querySelector('.sort-btn');
@@ -38,13 +39,15 @@ export default class DifferentSort {
 
                 // tri en fonction de la popularité
                 mediaArraySort = media.sort((a, b) => {
-                    return b.likes - a.likes;
-                });
+                    return b.likes - a.likes
+                })
             } else if (index == 1) {
-                btnSort.innerHTML = `Data`;
+                btnSort.innerHTML = `Date`;
+                console.log('tri en fonction de la date');
 
                 // tri en fonction de la date
                 mediaArraySort = media.sort((a, b) => {
+                    console.log('tri en fonction de la date......');
                     return new Date(a.date).valueOf() - new Date(b.date).valueOf();
                 })
 
@@ -53,9 +56,9 @@ export default class DifferentSort {
 
                 // tri en fonction du titre
                 mediaArraySort = media.sort((a, b) => {
-                    if (a.photoName.toLowerCase() < b.photoName.toLowerCase()) {
+                    if ((a.photoName.toLowerCase() < b.photoName.toLowerCase()) || (a.photoName.toUpperCase() < b.photoName.toUpperCase())) {
                         return -1;
-                    } else if (a.photoName.toLowerCase() > b.photoName.toLowerCase){
+                    } else if (a.photoName.toLowerCase() > b.photoName.toLowerCase() || (a.photoName.toUpperCase() < b.photoName.toUpperCase())){
                         return 1;
                     }
                 })
