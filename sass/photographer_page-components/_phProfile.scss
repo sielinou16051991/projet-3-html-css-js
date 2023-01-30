@@ -18,6 +18,22 @@
     background: #651414;
     transform: scale(1.05);
 }
+/*
+#photos-taken{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+        
+    video {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+    }
+}
+*/
 .ph-profil{
     display: flex;
     justify-content: space-between;
@@ -69,6 +85,7 @@
     }
 
 }
+
 
 @media (min-width: 1200px) {
     .ph-profil{

@@ -238,6 +238,22 @@ form input[data-error]::after {
   transform: scale(1.05);
 }
 
+/*
+#photos-taken{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+    video {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+    }
+}
+*/
 .ph-profil {
   display: flex;
   justify-content: space-between;
@@ -397,6 +413,75 @@ form input[data-error]::after {
     align-items: center;
     display: flex;
     justify-content: space-between;
+  }
+}
+#photos-taken {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2.8125rem 0;
+  padding: 0 1.25rem;
+}
+#photos-taken img, #photos-taken video {
+  border-radius: 0.3125rem;
+  height: 11.875rem;
+  object-fit: cover;
+  width: 20.9375rem;
+}
+
+.btn-like {
+  background: none;
+  border: none;
+  color: #901c1c;
+  font-size: 1.1rem;
+  margin-left: -0.3rem;
+}
+
+.ph-taken-elt {
+  color: #901c1c;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0 0 0.625rem;
+  width: 20.875rem;
+}
+.ph-taken-elt img, .ph-taken-elt video {
+  border-radius: 40.3125rem;
+  height: 11.875rem;
+  object-fit: cover;
+  width: 20.9375rem;
+}
+
+.ph-taken-elt .fa-heart:hover, .ph-taken-elt img:hover, .ph-taken-elt video:hover {
+  cursor: pointer;
+}
+.ph-taken-elt .ph-taken-title {
+  width: 14.0625;
+}
+
+.ph-taken-elt-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.ph-taken-title {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+@media (min-width: 1300px) {
+  #photos-taken {
+    justify-content: space-between;
+    margin: 2.8125rem 6.25rem;
+    padding: 0;
+  }
+  .ph-taken-elt {
+    width: 21.875rem;
+  }
+  .ph-taken-elt img, .ph-taken-elt video {
+    height: 18.75rem;
+    width: 21.875rem;
   }
 }
 

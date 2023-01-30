@@ -9,7 +9,6 @@ export default class DifferentSort {
         let hiddenSort = document.getElementsByClassName('hidden-sort');
 
         if (arrowOpen) {
-            console.log('click open');
             arrowOpen[0].addEventListener('click', () => {
                 console.log('click open');
                 hiddenSort[0].style.display = "block";
@@ -17,8 +16,8 @@ export default class DifferentSort {
             this.sortMedias(data);
         }
         if (arrowClose) {
-            console.log('click close');
             arrowClose[0].addEventListener('click', () => {
+                console.log('click close');
                 hiddenSort[0].style.display = 'none';
             });
         }

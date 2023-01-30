@@ -4,6 +4,9 @@ export default class VideoFactory {
         let eltVideo = document.createElement('video');
         eltVideo.setAttribute('src', elt.video);
         eltVideo.setAttribute('alt', elt.alt);
+        eltVideo.setAttribute('title', elt.title);
+        eltVideo.setAttribute('aria-hidden', "true");
+        eltVideo.setAttribute('aria-label', elt.ariaLabel);
         eltVideo.setAttribute('role', 'button');
         eltVideo.className = 'ph-video';
 

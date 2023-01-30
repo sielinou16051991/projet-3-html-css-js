@@ -24,10 +24,10 @@ export default class GalleryFactory {
 
                 console.log('mediaHTML.outerHTML', mediaHTML.outerHTML);
 
-                console.log('article',articlePhTeken);
+                console.log('article', articlePhTeken);
 
                 let tekenTemplate =
-                        ` <!--- CREATION D'UN LIEN IMAGE OU VIDEO ------>
+                        ` <!--- CREATION D'UN LIEN IMAGE OU VIDEO  ------>
                         <a href='#' title = "${element.tilte}" >
                          ${mediaHTML.outerHTML}  
                          </a>

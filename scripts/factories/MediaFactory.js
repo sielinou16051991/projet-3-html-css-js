@@ -10,6 +10,6 @@ export default class MediaFactory {
         } else if (elt.hasOwnProperty('video')) {
             factory = new VideoFactory();
         }
-        return factory.createHTML('elt');
+        return factory.createHTML(elt);
     }
 }

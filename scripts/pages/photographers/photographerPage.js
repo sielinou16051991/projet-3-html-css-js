@@ -46,7 +46,7 @@
         
         <!-------PHOTOS PRISE----> 
         <section id="photos-taken" aria-label="photos réalisées">
-
+            
         </section>
 
         <!------BOX------->
