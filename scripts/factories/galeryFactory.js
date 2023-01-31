@@ -1,4 +1,5 @@
 import MediaFactory from "./MediaFactory.js";
+import LightBox from "../pages/photographers/LightBox.js";
 
 export default class GalleryFactory {
     constructor(){
@@ -55,6 +56,8 @@ export default class GalleryFactory {
                         currentMediaName.push(element.title);
 
                         console.log("end forEach galeriFactory");
+
+                        (new LightBox()).initLightBox(currentMedia, currentMediaName)
 
             }
         })

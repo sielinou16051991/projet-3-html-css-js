@@ -53,6 +53,7 @@ export default class DifferentSort {
 
             } else if (index == 2) {
                 btnSort.innerHTML = `Titre`;
+                console.log('tri en fonction du titre');
 
                 // tri en fonction du titre
                 mediaArraySort = media.sort((a, b) => {
