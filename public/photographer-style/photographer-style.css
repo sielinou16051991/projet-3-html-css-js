@@ -49,6 +49,7 @@ aside article:nth-last-child(1) {
   width: 90%;
 }
 #works-lightbox-media img, #works-lightbox-media video {
+  border-radius: 10px;
   height: 100%;
   object-fit: contain;
   width: 100%;
@@ -74,7 +75,7 @@ aside article:nth-last-child(1) {
   color: #901c1c;
   font-size: 2rem;
   position: absolute;
-  right: -3rem;
+  right: -47.5rem;
   top: 48%;
 }
 
