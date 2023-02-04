@@ -1,4 +1,5 @@
 import GalleryFactory from "../../factories/galeryFactory.js";
+import LikesSubscriber from "./Likes.js";
 
 export default class MediaBuilder {
     // appelle la GalleryFactory pour créer la section média avec la fonction 'Like' et la boîte
@@ -7,6 +8,7 @@ export default class MediaBuilder {
         let gallery = new GalleryFactory().builder(media);
         this.boxLikesAndPrice(gallery.totalLike, data.photographers);
 
+        new LikesSubscriber();
     }
 
     // creation d'une boîte contenant le nombre total de likes et le prix du photographe

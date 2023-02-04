@@ -13,6 +13,7 @@ export default class ContactMeFormModal {
             console.log('**//data//**', data);
         }
         if (closeBtn) {
+            console.log('close modal', closeBtn);
             closeBtn[0].addEventListener('click', this.closeModal);
         }
     }
@@ -27,7 +28,7 @@ export default class ContactMeFormModal {
     // FERMETURE DE LA MODALE
     closeModal() {
         console.log('close modal++++')
-        let modalbg = document.getElementById('form-dialog');
+        let modalbg = document.getElementById("form-dialog");
         modalbg.style.display = 'none';
     }
 
@@ -35,7 +36,7 @@ export default class ContactMeFormModal {
     formPhName(data) {
         console.log('///formPhName////');
         let id = window.location.search.split('id=')[1]; // récupération de l'identifiant du photographe
-        let photographers = !id ? data : data.filter(photographer => {
+        let photographers = id ? data : data.filter(photographer => {
             photographer.id == id;
         });
         let phName = document.getElementById('ph-form-name');

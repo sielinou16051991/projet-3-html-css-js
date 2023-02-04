@@ -7,7 +7,7 @@ export default class From {
          let lastName = document.getElementById('last-name');
          let email = document.getElementById('email');
          let message = document.getElementById('message');
-         const regex = /^[a-zA-ZÀ-ÖØ-öø-ÿ]+$/;
+         const regex = /^[a-zA-ZÀ-ÖØ-öø-ÿ][" "]+$/;
 
          //ENVOI DU FORMULAIRE
          form.addEventListener('submit', (e) => {
@@ -19,8 +19,8 @@ export default class From {
                 lastName.style.border = 'none';
                 email.style.border = 'none';
                 message.style.border = 'none';
-                this.cosoleMessageValid(firstName, lastName, email, message);
-                document.getElementById('contact-form').reset();
+                this.consoleMessageValid(firstName, lastName, email, message);
+                document.getElementById('contact-form').onreset();
 
             } else {
                 this.errorVerification(firstName, lastName, email, message, regex);
@@ -62,8 +62,8 @@ export default class From {
      }
 
      checkEmail(email) {
-        const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if (email.value.trim().match(regex)) {
+        const reg = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (email.value.trim().match(reg)) {
             email.parentElement.setAttribute('data-error-visible', 'false');
             email.style.border = 'solid #279e7a 0.19rem';
             return true;
