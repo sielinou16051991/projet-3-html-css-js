@@ -23,14 +23,14 @@ export default class From {
                 document.getElementById('contact-form').reset();
 
             } else {
-                this.errorVerification(firstName, lastName, email, message);
+                this.errorVerification(firstName, lastName, email, message, regex);
             }
-         })
+         });
 
      }
 
      consoleMessageValid(firstName, lastName, email, message) {
-        console.group('Message du contact');
+        console.group('Données du formulaire de contact');
         console.log('Prénoms : ' + firstName.value);
         console.log('Nom : ' + lastName.value);
         console.log('Email : ' + email.value);
@@ -45,8 +45,9 @@ export default class From {
         this.checkMessage(message);
      }
 
-     checkNames(firstOrLastName){
-        let regex = /^[a-zA-Z]+$/;
+     // Vérification du prénom et du nom
+     checkNames(firstOrLastName, regex){
+        // let regex = /^[a-zA-Z]+$/;
         if (firstOrLastName.value.trim().length < 2 ||
              firstOrLastName.value.trim() === "" ||
               !firstOrLastName.value.match(regex)) {
@@ -54,7 +55,7 @@ export default class From {
                 firstOrLastName.style.border = '2px solid #red';
                 return false;
         } else {
-            firstOrLastName.parentElement.setAttribute('data-error-visible', false);
+            firstOrLastName.parentElement.setAttribute('data-error-visible', 'false');
             firstOrLastName.style.border = '.5px solide #279e7a';
             return true;
         }
@@ -74,7 +75,7 @@ export default class From {
      }
 
      checkMessage(message) {
-        if (message.value.trim()=== '' || message.value.trim()=== null) {
+        if (message.value.trim() === '' || message.value.trim() == null) {
             message.parentElement.setAttribute('data-error-visible', 'true');
             message.style.border = '2px solid #e54858';
             return false;

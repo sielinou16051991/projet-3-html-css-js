@@ -57,9 +57,9 @@ export default class DifferentSort {
 
                 // tri en fonction du titre
                 mediaArraySort = media.sort((a, b) => {
-                    if ((a.photoName.toLowerCase() < b.photoName.toLowerCase()) || (a.photoName.toUpperCase() < b.photoName.toUpperCase())) {
+                    if ((a.title.toLowerCase() < b.title.toLowerCase()) || (a.title.toUpperCase() < b.title.toUpperCase())) {
                         return -1;
-                    } else if (a.photoName.toLowerCase() > b.photoName.toLowerCase() || (a.photoName.toUpperCase() < b.photoName.toUpperCase())){
+                    } else if (a.title.toLowerCase() > b.title.toLowerCase() || (a.title.toUpperCase() < b.title.toUpperCase())){
                         return 1;
                     }
                 })

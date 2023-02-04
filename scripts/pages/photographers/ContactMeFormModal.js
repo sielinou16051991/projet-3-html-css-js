@@ -35,12 +35,12 @@ export default class ContactMeFormModal {
     formPhName(data) {
         console.log('///formPhName////');
         let id = window.location.search.split('id=')[1]; // récupération de l'identifiant du photographe
-        let photographers = id ? data : data.filter(photographer => {
+        let photographers = !id ? data : data.filter(photographer => {
             photographer.id == id;
         });
         let phName = document.getElementById('ph-form-name');
         console.log('photographers[0]', photographers[0]);
-       let phNameTemplate = ` ${photographers[0].name}`
+       let phNameTemplate = ` ${photographers[0].name}`;
         phName.innerHTML = phNameTemplate;
     }
 }

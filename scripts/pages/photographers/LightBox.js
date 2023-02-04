@@ -84,6 +84,7 @@ export default class LightBox {
         })
      }
 
+     // RACOURCIS CLAVIER POUR PARCOURIRE LES PHOTOS DANS LA LIGHTBOX
      keyboard(currentMedia, currentMediaName) {
         document.addEventListener('keydown', (key) => {
 
