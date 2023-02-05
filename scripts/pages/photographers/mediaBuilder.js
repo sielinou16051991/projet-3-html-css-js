@@ -16,6 +16,7 @@ export default class MediaBuilder {
     boxLikesAndPrice(totalLike, photographers) {
         const id = window.location.search.split('id=')[1];
 
+        console.log('id=', id);
         photographers.forEach(element => {
             console.log('element', element);
             if (id == element.id) {

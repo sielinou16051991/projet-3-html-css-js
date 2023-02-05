@@ -1,0 +1,27 @@
+/* style pour le prix de chaque photographe et son nombre de like */
+#box {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    #box {
+        align-items: center;
+        background: #bd8876;
+        border-radius: .3125rem;
+        bottom: 0;
+        display: flex;
+        font-size: 1.2rem;
+        font-weight: 500;
+        height: 4.375rem;
+        justify-content: space-between;
+        padding: 0 2.1875rem;
+        position: fixed;
+        right: 2.5rem;
+        width: 18rem;
+
+        .fa-heart{
+            left: 4.8rem;
+            position: absolute;
+        }
+    }
+}

@@ -447,10 +447,10 @@ form input[data-error]::after {
   font-size: 1.1em;
   font-weight: 500;
   margin: 0 0 0.625rem;
-  width: 20.875rem;
+  width: 20.9375rem;
 }
 .ph-taken-elt img, .ph-taken-elt video {
-  border-radius: 40.3125rem;
+  border-radius: 0.3125rem;
   height: 11.875rem;
   -o-object-fit: cover;
      object-fit: cover;
@@ -461,7 +461,7 @@ form input[data-error]::after {
   cursor: pointer;
 }
 .ph-taken-elt .ph-taken-title {
-  width: 14.0625;
+  width: 14.0625rem;
 }
 
 .ph-taken-elt-text {
@@ -488,5 +488,31 @@ form input[data-error]::after {
   .ph-taken-elt img, .ph-taken-elt video {
     height: 18.75rem;
     width: 21.875rem;
+  }
+}
+/* style pour le prix de chaque photographe et son nombre de like */
+#box {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  #box {
+    align-items: center;
+    background: #bd8876;
+    border-radius: 0.3125rem;
+    bottom: 0;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 4.375rem;
+    justify-content: space-between;
+    padding: 0 2.1875rem;
+    position: fixed;
+    right: 2.5rem;
+    width: 18rem;
+  }
+  #box .fa-heart {
+    left: 4.8rem;
+    position: absolute;
   }
 }/*# sourceMappingURL=photographers.css.map */
