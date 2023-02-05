@@ -2,7 +2,7 @@ export default class LikesSubscriber {
     // ajouter ou retirer un 'like' en clickan sur le coeur
 
     constructor() {
-        let media = document.getElementById('ph-works');
+        let media = document.getElementById('photos-taken');
 
         media.addEventListener('click', (e) => {
             let classListTarget = typeof e.target.classList === 'undefined' ? [] : e.target.classList.value.split(' ');
