@@ -113,7 +113,7 @@ form header {
   margin: -0.3rem 0.3rem 1rem 0;
 }
 form h1 {
-  font-size: 10rem;
+  font-size: 3rem;
   font-weight: 400;
 }
 form span {
@@ -216,7 +216,7 @@ form input[data-error]::after {
     font-size: 2.6rem;
   }
   form label, form input, form textarea {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
   }
 }
 #ph-contact {
