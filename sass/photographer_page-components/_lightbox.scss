@@ -33,7 +33,7 @@ aside {
     height: 100%;
     margin: 0 auto 1rem;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(230, 16, 16, 0);
     width: 90%;
 
     img, video {
@@ -64,11 +64,19 @@ aside {
     color: #901c1c;
     font-size: 2rem;
     position: absolute;
-    right: -47.5rem;
+    right: -58.5rem;
     top: 48%;
 }
 
+@media (min-width: 1200px) {
+    .right-arrow-lightbox {
+        right: -47.5rem;
+    }
+}
+
 @media (min-width: 600px) {
+
+
     .close-lightbox-icon {
         cursor: pointer;
         right: 1rem;
@@ -92,3 +100,4 @@ aside {
         padding: .5rem 0;
     }
 }
+
