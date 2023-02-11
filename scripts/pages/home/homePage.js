@@ -7,7 +7,7 @@ export default class homePage{
     // construction de la section photogra
     displayPhotographers(data){
         
-        new header().entete();
+        new header().entete(data);
        
     //    console.log("-----data-----", data);
         let photographers = data.photographers;

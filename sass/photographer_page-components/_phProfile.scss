@@ -1,5 +1,4 @@
 #ph-contact{
-    width: 170px;
     bottom: 25px;
     border-radius: 5px;
     background-color: #901C1C;
@@ -11,6 +10,7 @@
     height: 35px;
     position: fixed;
     width: 170PX;
+    
 
 }
 
@@ -18,26 +18,33 @@
     background: #651414;
     transform: scale(1.05);
 }
-/*
-#photos-taken{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 
-        
-    video {
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-        object-fit: cover;
-    }
-}
-*/
+// #photos-taken{
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+   
+//     video {
+//         border-radius: 50%;
+//         height: 100px;
+//         width: 100px;
+//         object-fit: cover;
+//     }
+// }
+
 .ph-profil{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    button {
+        height: 55px;
+        position: absolute;
+        top: 9.8rem;
+        left: 50%;
+    }
 
     img {
         border-radius: 50%;
@@ -92,19 +99,13 @@
         background-color: #fafafa;
         margin: 0 20px;
 
-        button {
-            height: 55px;
-            left: 48rem;
-            position: absolute;
-            top: 9.8rem;
-        }
     }
 }
 @media (max-width: 1200px) {
     .ph-profil{
         button {
             height: 0;
-            left: 0;
+            left: 50%;
             margin-left: auto;
             margin-right: auto;
             z-index: 1;
