@@ -73,8 +73,10 @@
             // console.log("***chercher un article dans le tableau pour l'afficher ou le cacher s'il est active ou non ***", article);
                  if (this.filterArticleCompare(article)){
                      article.style.display = 'block'
+                    // article.style.opacity = 1
                  } else {
                      article.style.display = 'none'
+                    // article.style.opacity = 0.1
                  }
              });
          }

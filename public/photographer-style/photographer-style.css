@@ -27,6 +27,7 @@ aside article:nth-last-child(1) {
   font-family: sans-serif;
   font-size: 1rem;
   font-weight: 600;
+  background-color: rgb(202, 44, 44);
 }
 
 #lightbox-body {
@@ -67,6 +68,7 @@ aside article:nth-last-child(1) {
   color: #901c1c;
   font-size: 2rem;
   left: -3rem;
+  background-color: black;
   position: absolute;
   top: 48%;
 }
@@ -75,13 +77,19 @@ aside article:nth-last-child(1) {
   color: #901c1c;
   font-size: 2rem;
   position: absolute;
-  right: -58.5rem;
+  background-color: red;
+  right: -3rem;
   top: 48%;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1300px) {
   .right-arrow-lightbox {
-    right: -47.5rem;
+    margin-right: -47.5rem;
+  }
+}
+@media (min-width: 1300px) {
+  .right-arrow-lightbox {
+    right: -47.5 0.5rem;
   }
 }
 @media (min-width: 600px) {

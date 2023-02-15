@@ -98,8 +98,10 @@
         <aside id="works-lightbox" area-hidden="true">
             <article id="lightbox-body" role="dialog">
                 <span class="fas fa-times close-lightbox-icon" role="button" title="close dialog"></span>
-                <span class="fas fa-chevron-left left-arrow-lightbox" role="button" title="previous image"></span>
-                <span class="fas fa-chevron-right right-arrow-lightbox" role="button" title="Next image"></span>
+                <div>
+                    <span class="fas fa-chevron-left left-arrow-lightbox" role="button" title="previous image"></span>
+                    <span class="fas fa-chevron-right right-arrow-lightbox" role="button" title="Next image"></span>
+                </div>
                 <div id="works-lightbox-media"></div>
                 <div id="works-lightbox-name"></div>
             </article>
