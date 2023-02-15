@@ -350,6 +350,11 @@ form input[data-error]::after {
   display: none;
 }
 
+.sort-wrapper {
+  margin-top: 14rem;
+  background-color: red !important;
+}
+
 @media (min-width: 900px) {
   .arrow-down-open {
     color: #fff;

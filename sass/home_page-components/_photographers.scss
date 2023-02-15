@@ -2,20 +2,22 @@
 .photographer__section {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     margin-bottom: 5rem;
     margin-top: 5rem;
     padding: 0;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
-  }
-  article {
+}
+article {
+    margin-right: 1rem;
 
     image, a, .location, .tagline, .price {
       margin-bottom: -1rem;
     }
-  }
-  article img {
+}
+article img {
     background: black;
     height: 12.5rem;
     width: 12.5rem;
@@ -24,23 +26,23 @@
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 .8rem rgba(134, 134, 134, 0.432);
-  }
+}
 
-  .articlePhotographer {
+.articlePhotographer {
     text-align: center;
     width: 20rem;
     padding: .5rem;
-    margin: 5rem;
+    margin: .5rem;
   }
   .articlePhotographer a {
     text-decoration: none;
     color: #59ce26;
-  }
-  .articlePhotographer ul {
+}
+.articlePhotographer ul {
     display: flex;
     flex-flow: wrap;
-  }
-  @media screen and (min-width: map-get($breakpoints, desktop)) {
+}
+@media screen and (min-width: map-get($breakpoints, desktop)) {
     .tags {
       display: flex;
       justify-content: center;
@@ -49,5 +51,5 @@
     section {
       margin-top: 5rem;
     }
-  }
+}
   
