@@ -234,7 +234,6 @@ form input[data-error]::after {
   }
 }
 #ph-contact {
-  width: 170px;
   bottom: 25px;
   border-radius: 5px;
   background-color: #901C1C;
@@ -253,26 +252,16 @@ form input[data-error]::after {
   transform: scale(1.05);
 }
 
-/*
-#photos-taken{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-
-    video {
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-        object-fit: cover;
-    }
-}
-*/
 .ph-profil {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.ph-profil button {
+  height: 55px;
+  position: absolute;
+  top: 9.8rem;
+  left: 50%;
 }
 .ph-profil img {
   border-radius: 50%;
@@ -317,17 +306,11 @@ form input[data-error]::after {
     background-color: #fafafa;
     margin: 0 20px;
   }
-  .ph-profil button {
-    height: 55px;
-    left: 48rem;
-    position: absolute;
-    top: 9.8rem;
-  }
 }
 @media (max-width: 1200px) {
   .ph-profil button {
     height: 0;
-    left: 0;
+    left: 50%;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
@@ -360,6 +343,9 @@ form input[data-error]::after {
 .works-sort {
   display: none;
 }
+.works-sort #sort-wrapper button, .works-sort #sort-wrapper span, .works-sort #sort-wrapper ul {
+  margin-top: 2rem;
+}
 
 @media (min-width: 900px) {
   .arrow-down-open {
@@ -375,7 +361,7 @@ form input[data-error]::after {
     top: 1.55rem;
   }
   .hidden-sort li {
-    background: #901c1c;
+    background: #0a0909;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;

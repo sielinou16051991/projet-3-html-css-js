@@ -6,7 +6,7 @@
         // console.log("=====FILTER======");
          let filters = document.querySelector('ul');
          let articles = document.querySelectorAll('.articlePhotographer');
-        // console.log("***TABLEAU DES DIFFERENTES CLASSES DE LA BALISE ARTICLE CHARGé****===>", articles);
+         console.log("***TABLEAU DES DIFFERENTES CLASSES DE LA BALISE ARTICLE CHARGé****===>", articles);
          filters.addEventListener('click', event => {
         //    console.log("event", event);
              let classValue = event.target.classList.value;

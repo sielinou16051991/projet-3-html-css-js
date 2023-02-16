@@ -3,9 +3,13 @@ header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-top: 3rem;
-  height: 30px;
+  margin-top: 0rem;
+  height: 150px;
   overflow: hidden;
+  margin-top: -4rem;
+}
+header a img {
+  margin-top: -4rem;
 }
 
 header > h1 {
@@ -13,7 +17,7 @@ header > h1 {
   font-family: "DM Sans", sans-serif;
   font-size: 24px;
   width: fit-content;
-  margin-top: -1rem;
+  margin-top: -2rem;
 }
 
 .button--forContent {
@@ -46,7 +50,7 @@ header > h1 {
   flex-direction: row;
   margin-bottom: 5rem;
   margin-top: 5rem;
-  padding: 0;
+  text-align: center;
   width: 100%;
 }
 
@@ -70,7 +74,7 @@ article img {
 
 .articlePhotographer {
   text-align: center;
-  width: 20rem;
+  width: 23rem;
   padding: 0.5rem;
   margin: 0.5rem;
 }
@@ -83,6 +87,12 @@ article img {
 .articlePhotographer ul {
   display: flex;
   flex-flow: wrap;
+}
+.articlePhotographer ul li:hover,
+.articlePhotographer ul li.actived {
+  cursor: pointer;
+  background-color: #901C1C;
+  color: #fff;
 }
 
 @media screen and (min-width: 1023px) {

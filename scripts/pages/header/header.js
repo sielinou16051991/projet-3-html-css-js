@@ -21,12 +21,11 @@ export default class header {
      </div>
  --->
      <header id="header" aria-hidden="false">
-         <a href="#" aria-label="Fisheye Home page">
-             <img src="assets/logo/logo.png" class="logo" alt="veillez patienter, réactualliser la page ou clicker sur le lien">
-         </a>
+        <a href="#" aria-label="Fisheye Home page">
+            <img src="assets/logo/logo.png" class="logo" alt="veillez patienter, réactualliser la page ou clicker sur le lien">
+        </a>
          <nav aria-label="photographer categories">
              <ul class="liste">
-             ${photographe.tags.map( tag => `
                  <a href="#">
                     <li data-filter="portrait">#Portrait</li>
                  </a>
@@ -50,8 +49,7 @@ export default class header {
                  </a>
                  <a href="#">
                      <li data-filter="events">#Events</li>
-                 </a>`
-                    )}
+                 </a>
              </ul>
          </nav>
          <a href="#photographers" class="button--forContent"
