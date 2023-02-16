@@ -106,7 +106,7 @@ form {
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
-  padding: 0 1rem 2.2rem 1rem;
+  padding: 1rem 1rem 2.2rem 1rem;
 }
 form header {
   display: flex;
@@ -116,6 +116,7 @@ form header {
 form h1 {
   font-size: 2rem;
   font-weight: 400;
+  margin-bottom: -2rem;
 }
 form span {
   color: #181212;
@@ -216,7 +217,6 @@ form input[data-error]::after {
   }
   form h1 {
     font-size: 2rem;
-    margin-bottom: -6rem;
   }
   form label, form input, form textarea {
     font-size: 1.6rem;
