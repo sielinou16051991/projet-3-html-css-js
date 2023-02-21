@@ -109,3 +109,18 @@ aside {
     }
 }
 
+@media (max-width: 600px) {
+    .right-arrow-lightbox {
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+        top: 28%;
+    }
+    .left-arrow-lightbox {
+        position: absolute;
+        cursor: pointer;
+        left: -8%;
+        top: 48%;
+    }
+}
+

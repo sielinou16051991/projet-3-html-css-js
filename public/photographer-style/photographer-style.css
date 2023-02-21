@@ -101,6 +101,20 @@ aside article:nth-last-child(1) {
     padding: 0.5rem 0;
   }
 }
+@media (max-width: 600px) {
+  .right-arrow-lightbox {
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 28%;
+  }
+  .left-arrow-lightbox {
+    position: absolute;
+    cursor: pointer;
+    left: -8%;
+    top: 48%;
+  }
+}
 form {
   background-color: #db8876;
   display: flex;
