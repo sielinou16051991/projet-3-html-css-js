@@ -110,6 +110,13 @@ aside {
 }
 
 @media (max-width: 600px) {
+    .close-lightbox-icon {
+        position: absolute;
+        cursor: pointer;
+        left: 2%;
+        right: 1rem;
+        top: .5rem;
+    }
     .right-arrow-lightbox {
         position: absolute;
         cursor: pointer;
