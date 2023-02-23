@@ -10,7 +10,7 @@ export default class VideoFactory {
         // eltVideo.setAttribute(controls);
         console.log('eltVideo.setAttribute(controls);', eltVideo.setAttribute('controls', elt.controls));
         eltVideo.setAttribute('role', 'button');
-        eltVideo.className = 'ph-video';
+        eltVideo.className = 'ph-media';
 
         return eltVideo;
     }

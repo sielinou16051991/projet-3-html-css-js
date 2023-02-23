@@ -17,10 +17,10 @@ export default class GalleryFactory {
         dataMedia.forEach(element => {
             console.log('element.photographerId*****', element.photographerId);
             if (id == element.photographerId) {
-                console.log('id == element.photographerId');
+                console.log('id == element.photographerId', id == element.photographerId);
                 let sectionPhotosTeken = document.getElementById('photos-taken');
                 console.log('*******sectionPhotosTeken', sectionPhotosTeken);
-                let articlePhTeken = document.createElement('article');
+                let articlePhTeken = document.createElement("article");
                 let mediaHTML = mediaFactory.renderMedia(element);
 
                 console.log('mediaHTML.outerHTML', mediaHTML.outerHTML);
@@ -29,7 +29,7 @@ export default class GalleryFactory {
 
                 let tekenTemplate =
                         ` <!--- CREATION D'UN LIEN IMAGE OU VIDEO  ------>
-                        <a href='#' title = "${element.tilte}" >
+                         <a href='#' title = "${element.tilte}" >
                          ${mediaHTML.outerHTML}  
                          </a>
 
@@ -54,6 +54,8 @@ export default class GalleryFactory {
                         this.totalLike += parseInt(element.likes);
                         currentMedia.push(mediaHTML.outerHTML);
                         currentMediaName.push(element.title);
+
+                        console.log('currentMedia', currentMedia);
 
                         console.log("end forEach galeriFactory");
 

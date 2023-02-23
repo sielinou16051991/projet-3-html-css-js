@@ -6,11 +6,10 @@ export default class LightBox {
 
     // initialisation de la lightbox
     initLightBox(currentMedia, currentMediaName) {
-        let gauche = document.querySelector('.left-arrow-lightbox');
-        let droit = document.querySelector('.right-arrow-lightbox');
         let getMedias = Array.from(document.getElementsByClassName('ph-media'));
+        console.log('getMedias', getMedias);
 
-        getMedias.forEach((mediaWorks, index) => mediaWorks.addEventListener('click', () => {
+        getMedias.forEach((mediaWorks, index) => mediaWorks.addEventListener("click", () => {
             let lightBoxMedia = document.getElementById('works-lightbox-media');
             let lightBoxName = document.getElementById('works-lightbox-name');
             let src = currentMedia[index];
@@ -21,8 +20,9 @@ export default class LightBox {
             lightBoxMedia.innerHTML = `${src}`;
             lightBoxName.innerHTML = `${nameSrc}`;
         }))
-        this.previous(gauche, currentMedia, currentMediaName);
-        this.next(droit, currentMedia, currentMediaName);
+
+        this.previous(document.querySelector('.left-arrow-lightbox'), currentMedia, currentMediaName);
+        this.next(document.querySelector('.right-arrow-lightbox'), currentMedia, currentMediaName);
         this.close();
         this.keyboard(currentMedia, currentMediaName);
         return this;
@@ -73,7 +73,7 @@ export default class LightBox {
         });
      }
 
-     // 6) fer;eture de lq light box
+     // 6) fermeture de la light box
 
      close() {
         let closeIcon = document.querySelector('.close-lightbox-icon');

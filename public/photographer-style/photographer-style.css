@@ -75,8 +75,7 @@ aside article:nth-last-child(1) {
 .right-arrow-lightbox {
   color: #901c1c;
   font-size: 2rem;
-  width: 40px;
-  margin-top: 30%;
+  margin-top: 38%;
   margin-left: 96%;
 }
 
@@ -103,7 +102,7 @@ aside article:nth-last-child(1) {
 }
 @media (max-width: 600px) {
   .close-lightbox-icon {
-    position: absolute;
+    position: relative;
     cursor: pointer;
     left: 2%;
     right: 1rem;
@@ -113,7 +112,7 @@ aside article:nth-last-child(1) {
     position: absolute;
     cursor: pointer;
     left: 0;
-    top: 48%;
+    top: 27%;
   }
   .left-arrow-lightbox {
     position: absolute;
