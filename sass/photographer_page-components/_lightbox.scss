@@ -54,20 +54,20 @@ aside {
 }
 
 .left-arrow-lightbox {
-    color: #901c1c;
+    color: #901C1C;
     font-size: 2rem;
-    left: 0;
+    left: -3rem;
     position: absolute;
     top: 48%;
 }
 
 .right-arrow-lightbox {
-    color: #901c1c;
+    color: #901C1C;
     font-size: 2rem;
-    margin-top: 38%;
-    margin-left: 96%;
+    position: absolute;
+    right: -60rem;
+    top: 48%;
 }
-
 
 // @media (max-width: 1300px) {
 //     .right-arrow-lightbox {
@@ -108,25 +108,25 @@ aside {
     }
 }
 
-@media (max-width: 600px) {
-    .close-lightbox-icon {
-        position: relative;
-        cursor: pointer;
-        left: 2%;
-        right: 1rem;
-        top: .5rem;
-    }
-    .right-arrow-lightbox {
-        position: absolute;
-        cursor: pointer;
-        left: 0;
-        top: 27%;
-    }
-    .left-arrow-lightbox {
-        position: absolute;
-        cursor: pointer;
-        left: -8%;
-        top: 48%;
-    }
-}
+// @media (max-width: 600px) {
+//     .close-lightbox-icon {
+//         position: relative;
+//         cursor: pointer;
+//         left: 2%;
+//         right: 1rem;
+//         top: .5rem;
+//     }
+//     .right-arrow-lightbox {
+//         position: absolute;
+//         cursor: pointer;
+//         left: 0;
+//         top: 27%;
+//     }
+//     .left-arrow-lightbox {
+//         position: absolute;
+//         cursor: pointer;
+//         left: -8%;
+//         top: 48%;
+//     }
+// }
 
