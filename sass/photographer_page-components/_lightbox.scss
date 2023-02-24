@@ -68,14 +68,13 @@ aside {
     top: 48%;
 }
 
-@media (min-width: 1200px) {
-    .right-arrow-lightbox {
-        right: -47.5rem;
-    }
-}
+// @media (min-width: 1200px) {
+//     .right-arrow-lightbox {
+//         right: -47.5rem;
+//     }
+// }
 
 @media (min-width: 600px) {
-
 
     .close-lightbox-icon {
         cursor: pointer;
@@ -88,10 +87,10 @@ aside {
         left: 0;
         top: 48%;
     }
-    
+
     .right-arrow-lightbox {
         cursor: pointer;
-        left: 0;
+        right: 0;
         top: 48%;
     }
 
