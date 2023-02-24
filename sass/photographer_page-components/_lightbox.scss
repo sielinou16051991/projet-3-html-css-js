@@ -102,25 +102,25 @@ aside {
     }
 }
 
-// @media (max-width: 600px) {
-//     .close-lightbox-icon {
-//         position: relative;
-//         cursor: pointer;
-//         left: 2%;
-//         right: 1rem;
-//         top: .5rem;
-//     }
-//     .right-arrow-lightbox {
-//         position: absolute;
-//         cursor: pointer;
-//         left: 0;
-//         top: 27%;
-//     }
-//     .left-arrow-lightbox {
-//         position: absolute;
-//         cursor: pointer;
-//         left: -8%;
-//         top: 48%;
-//     }
-// }
+@media (max-width: 600px) {
+    .close-lightbox-icon {
+        position: absolute;
+        cursor: pointer;
+        left: 98%;
+        right: 1rem;
+        top: .5rem;
+    }
+    .right-arrow-lightbox {
+        position: relative;
+        cursor: pointer;
+        left: 52%;
+        top: 48%;
+    }
+    .left-arrow-lightbox {
+        position: absolute;
+        cursor: pointer;
+        left: -8%;
+        top: 48%;
+    }
+}
 
