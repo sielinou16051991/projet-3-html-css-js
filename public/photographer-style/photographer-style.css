@@ -60,12 +60,13 @@ aside article:nth-last-child(1) {
 .close-lightbox-icon {
   color: #901c1c;
   font-size: 1.7rem;
-  margin-left: 97%;
-  margin-top: 0.5rem;
+  position: absolute;
+  right: -3rem;
+  top: 0.5rem;
 }
 
 .left-arrow-lightbox {
-  color: #901C1C;
+  color: #901c1c;
   font-size: 2rem;
   left: -3rem;
   position: absolute;
@@ -73,10 +74,10 @@ aside article:nth-last-child(1) {
 }
 
 .right-arrow-lightbox {
-  color: #901C1C;
+  color: #901c1c;
   font-size: 2rem;
   position: absolute;
-  right: -60rem;
+  right: -58.5rem;
   top: 48%;
 }
 
@@ -347,7 +348,7 @@ form input[data-error]::after {
     color: #fff;
     left: 8.5rem;
     position: absolute;
-    top: 1.55rem;
+    top: -6.95rem;
   }
   .hidden-sort li {
     background: #901c1c;
