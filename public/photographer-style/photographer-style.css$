@@ -27,15 +27,17 @@ aside article:nth-last-child(1) {
   font-family: sans-serif;
   font-size: 1rem;
   font-weight: 600;
+  background-color: rgb(202, 44, 44);
 }
 
 #lightbox-body {
+  background-color: #fff;
   height: 90%;
   left: 50%;
   margin: 0 auto;
   position: fixed;
   text-align: center;
-  top: 4%;
+  top: 3%;
   transform: translate(-50%, 0);
   width: 60%;
 }
@@ -45,41 +47,52 @@ aside article:nth-last-child(1) {
   margin: 0 auto 1rem;
   overflow: hidden;
   background-color: rgba(230, 16, 16, 0);
-  width: 100%;
+  width: 90%;
 }
 #works-lightbox-media img, #works-lightbox-media video {
   border-radius: 10px;
   height: 100%;
   object-fit: contain;
-  width: 90%;
-  position: absolute;
-  left: 5%;
-  top: 0%;
+  width: 100%;
 }
 
 .close-lightbox-icon {
   color: #901c1c;
   font-size: 1.7rem;
-  margin-left: 97%;
-  margin-top: 0.5rem;
+  position: absolute;
+  right: -3rem;
+  top: 0.5rem;
 }
 
 .left-arrow-lightbox {
-  color: #901C1C;
+  color: #901c1c;
   font-size: 2rem;
   left: -3rem;
+  background-color: black;
   position: absolute;
   top: 48%;
 }
 
 .right-arrow-lightbox {
-  color: #901C1C;
+  color: #901c1c;
   font-size: 2rem;
   position: absolute;
-  right: -60rem;
+  background-color: rgb(56, 33, 33);
+  width: 40px;
+  right: -47rem;
   top: 48%;
 }
 
+@media (max-width: 1300px) {
+  .right-arrow-lightbox {
+    margin-right: -47.5rem;
+  }
+}
+@media (min-width: 1300px) {
+  .right-arrow-lightbox {
+    right: -47.5 0.5rem;
+  }
+}
 @media (min-width: 600px) {
   .close-lightbox-icon {
     cursor: pointer;
@@ -93,7 +106,7 @@ aside article:nth-last-child(1) {
   }
   .right-arrow-lightbox {
     cursor: pointer;
-    right: 0;
+    left: 0;
     top: 48%;
   }
   aside article:nth-last-child(1) {
@@ -106,7 +119,7 @@ form {
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
-  padding: 1rem 1rem 2.2rem 1rem;
+  padding: 1rem 2.2rem 2.2rem;
 }
 form header {
   display: flex;
@@ -114,9 +127,8 @@ form header {
   margin: -0.3rem 0.3rem 1rem 0;
 }
 form h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
-  margin-bottom: -2rem;
 }
 form span {
   color: #181212;
@@ -204,9 +216,8 @@ form input[data-error]::after {
 
 @media (min-width: 600px) {
   #form-dialog {
-    top: 0.3rem;
+    top: 4.3rem;
     width: 95%;
-    height: 400px;
   }
   form .close-form-icon {
     font-size: 2.4rem;
@@ -216,10 +227,10 @@ form input[data-error]::after {
     height: 2.4rem;
   }
   form h1 {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
   form label, form input, form textarea {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
   }
 }
 #ph-contact {
@@ -333,7 +344,7 @@ form input[data-error]::after {
   display: none;
 }
 .works-sort #sort-wrapper button, .works-sort #sort-wrapper span, .works-sort #sort-wrapper ul {
-  margin-top: 8.5rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 900px) {
@@ -350,7 +361,7 @@ form input[data-error]::after {
     top: 1.55rem;
   }
   .hidden-sort li {
-    background: #901c1c;
+    background: #0a0909;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
@@ -411,6 +422,7 @@ form input[data-error]::after {
   justify-content: space-around;
   margin: 2.8125rem 0;
   padding: 0 1.25rem;
+  background-color: red;
 }
 #photos-taken img, #photos-taken video {
   border-radius: 0.3125rem;
@@ -501,4 +513,4 @@ form input[data-error]::after {
   }
 }
 
-/*# sourceMappingURL=photographer-style.css.map */
+/*# sourceMappingURL=photographer-style.css$.map */

@@ -6,7 +6,7 @@
         // console.log("=====FILTER======");
          let filters = document.querySelector('ul');
          let articles = document.querySelectorAll('.articlePhotographer');
-        // console.log("***TABLEAU DES DIFFERENTES CLASSES DE LA BALISE ARTICLE CHARGé****===>", articles);
+         console.log("***TABLEAU DES DIFFERENTES CLASSES DE LA BALISE ARTICLE CHARGé****===>", articles);
          filters.addEventListener('click', event => {
         //    console.log("event", event);
              let classValue = event.target.classList.value;
@@ -73,8 +73,10 @@
             // console.log("***chercher un article dans le tableau pour l'afficher ou le cacher s'il est active ou non ***", article);
                  if (this.filterArticleCompare(article)){
                      article.style.display = 'block'
+                    // article.style.opacity = 1
                  } else {
                      article.style.display = 'none'
+                    // article.style.opacity = 0.1
                  }
              });
          }

@@ -3,15 +3,21 @@ header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 0rem;
+  height: 150px;
   overflow: hidden;
+  margin-top: -4rem;
+}
+header a img {
+  margin-top: -4rem;
 }
 
 header > h1 {
   color: red;
   font-family: "DM Sans", sans-serif;
-  font-size: 14px;
+  font-size: 24px;
   width: fit-content;
+  margin-top: -2rem;
 }
 
 .button--forContent {
@@ -44,13 +50,12 @@ header > h1 {
   flex-direction: row;
   margin-bottom: 5rem;
   margin-top: 5rem;
-  padding: 0;
+  text-align: center;
   width: 100%;
-  justify-content: space-evenly;
 }
 
 article {
-  margin-right: 1rem;
+  margin: 1rem;
 }
 article image, article a, article .location, article .tagline, article .price {
   margin-bottom: -1rem;
@@ -69,7 +74,7 @@ article img {
 
 .articlePhotographer {
   text-align: center;
-  width: 20rem;
+  width: 23rem;
   padding: 0.5rem;
   margin: 0.5rem;
 }
@@ -82,6 +87,12 @@ article img {
 .articlePhotographer ul {
   display: flex;
   flex-flow: wrap;
+}
+.articlePhotographer ul li:hover,
+.articlePhotographer ul li.actived {
+  cursor: pointer;
+  background-color: #901C1C;
+  color: #fff;
 }
 
 @media screen and (min-width: 1023px) {

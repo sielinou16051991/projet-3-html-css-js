@@ -18,13 +18,12 @@ aside {
 
 
 #lightbox-body {
-    background-color: #fff;
     height: 90%;
     left: 50%;
     margin: 0 auto;
     position: fixed;
     text-align: center;
-    top: 3%;
+    top: 4%;
     transform: translate(-50%, 0);
     width: 60%;
 }
@@ -34,13 +33,16 @@ aside {
     margin: 0 auto 1rem;
     overflow: hidden;
     background-color: rgba(230, 16, 16, 0);
-    width: 90%;
+    width: 100%;
 
     img, video {
         border-radius: 10px;
         height: 100%;
         object-fit: contain;
-        width: 100%;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 0%;
     }
 }
 
@@ -99,4 +101,26 @@ aside {
         padding: .5rem 0;
     }
 }
+
+// @media (max-width: 600px) {
+//     .close-lightbox-icon {
+//         position: relative;
+//         cursor: pointer;
+//         left: 2%;
+//         right: 1rem;
+//         top: .5rem;
+//     }
+//     .right-arrow-lightbox {
+//         position: absolute;
+//         cursor: pointer;
+//         left: 0;
+//         top: 27%;
+//     }
+//     .left-arrow-lightbox {
+//         position: absolute;
+//         cursor: pointer;
+//         left: -8%;
+//         top: 48%;
+//     }
+// }
 

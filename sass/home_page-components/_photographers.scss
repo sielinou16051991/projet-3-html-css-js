@@ -5,13 +5,12 @@
     flex-direction: row;
     margin-bottom: 5rem;
     margin-top: 5rem;
-    padding: 0;
+    text-align: center;
     width: 100%;
-    justify-content: space-evenly;
     
 }
 article {
-    margin-right: 1rem;
+    margin: 1rem;
 
     image, a, .location, .tagline, .price {
       margin-bottom: -1rem;
@@ -30,17 +29,24 @@ article img {
 
 .articlePhotographer {
     text-align: center;
-    width: 20rem;
+    width: 23rem;
     padding: .5rem;
     margin: .5rem;
-}
-.articlePhotographer a {
+  }
+  .articlePhotographer a {
     text-decoration: none;
     color: #59ce26;
 }
 .articlePhotographer ul {
     display: flex;
     flex-flow: wrap;
+
+    li:hover,
+    li.actived {
+        cursor: pointer;
+        background-color: #901C1C;
+        color: #fff;
+    }
 }
 @media screen and (min-width: map-get($breakpoints, desktop)) {
     .tags {

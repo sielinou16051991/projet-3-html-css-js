@@ -3,13 +3,23 @@ header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 0rem;
+    height: 150px;
     overflow: hidden;
+    margin-top: -4rem;
+
+    a {
+        img {
+            margin-top: -4rem;
+        }
+    }
+
 }
 
 header > h1 {
     color: red;
     font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
+    font-size: 24px;
     width: fit-content;
+    margin-top: -2rem;
 }
