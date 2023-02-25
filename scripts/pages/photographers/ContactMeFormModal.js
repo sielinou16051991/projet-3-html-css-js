@@ -16,6 +16,7 @@ export default class ContactMeFormModal {
             console.log('close modal', closeBtn);
             closeBtn[0].addEventListener('click', this.closeModal);
         }
+        this.keyboard();
     }
 
     // OUVERTURE DE LA MODAL ===> la box
@@ -30,6 +31,18 @@ export default class ContactMeFormModal {
         console.log('close modal++++')
         let modalbg = document.getElementById("form-dialog");
         modalbg.style.display = 'none';
+    }
+
+    // FERMETURE DE LA MODALE EN PESSANT SUR LA TOUCHE "Esc" du clavier
+    keyboard() {
+        document.addEventListener('keydown', (key) => {
+    
+            if (key.code == "Escape") {
+                let modalbg = document.getElementById("form-dialog");
+                modalbg.style.display = 'none';
+            }
+        });
+        
     }
 
     // AFFICHER LE NOM DES PHOTOGRAPHE SOUS LE FORMULAIRE

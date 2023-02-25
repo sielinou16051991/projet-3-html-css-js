@@ -321,7 +321,7 @@ form input[data-error]::after {
   }
   #ph-contact {
     position: absolute;
-    top: 40%;
+    top: 25%;
     left: 45%;
   }
 }
@@ -336,7 +336,7 @@ form input[data-error]::after {
 }
 @media (min-width: 900px) {
   .ph-profil {
-    background-color: #fafafa;
+    background-color: #e6d8d8;
     padding: 2rem;
   }
   .ph-profil img {
