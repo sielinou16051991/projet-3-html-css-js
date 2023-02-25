@@ -7,38 +7,63 @@ export default class LightBox {
     // initialisation de la lightbox
     initLightBox(currentMedia, currentMediaName) {
         let getMedias = Array.from(document.getElementsByClassName('ph-media'));
+        let getVideo = Array.from(document.getElementsByTagName('video'));
         console.log('getMedias', getMedias);
         console.log('getMedias.localName', getMedias.localName);
 
-        getMedias.forEach((elt) => {
-            console.log('elt', elt);
-            let articleVideo = document.getElementsByTagName('video');
-            console.log('elt.setAttribute(controls)', articleVideo);
-        })
+        console.log('getVideo', getVideo);
+        console.log('document.createElement(video)', document.createElement('video'));
+       // getVideo.forEach((elt) => {
+         //   console.log('elt', elt);
+            // let articleVideo = document.getElementsByTagName('video')[0].localName;
+            //console.log('elt.setAttribute(controls)', articleVideo);
+            //console.log('elt.setAttribute(controls)', elt.setAttribute(controls));
+         //  elt.setAttribute('controls', elt.controls);
+        //})
     //     if (element.video != undefined) {
     //         templateI = `<i class="fa fa-play visibility" aria-hidden="true"></i>`;
             
     //    }
+    let tempVideo
         getMedias.forEach((mediaWorks, index) => mediaWorks.addEventListener("click", () => {
             let lightBoxMedia = document.getElementById('works-lightbox-media');
             let lightBoxName = document.getElementById('works-lightbox-name');
             let videoControler = document.querySelector('video');
-            videoControler.setAttribute(videoControler.controls);
-
-            console.log('videoControler', videoControler);
+            //videoControler.setAttribute('controls', videoControler.controls);
+             tempVideo = lightBoxMedia.getElementsByTagName('video');
+             //tempVideo[0].setAttribute('controls', tempVideo[0].controls); 
+             // tempVideo[0].setAttribute('controls', tempVideo[0].controls)
+            //  if(tempVideo.length > 0) {
+            //     console.log("tempVideo", tempVideo, tempVideo.length, tempVideo[0]);
+            //     for (i= 0; i<tempVideo.length; i++) {
+            //         let elt = tempVideo[i];
+            //         console.log("elt avant", elt);
+            //         elt.setAttribute('controls', elt.controls);
+            //         console.log("elt apres", elt);
+            //     }
+            //     tempVideo.forEach((elt) => {
+            //         console.log("elt avant", elt);
+            //         elt.setAttribute('controls', elt.controls);
+            //         console.log("elt apres", elt);
+            //     });
+            //  }
+           // console.log('videoControler', videoControler);
+           //let control = currentMedia[index];
             let src = currentMedia[index];
             let nameSrc = currentMediaName[index];
             this.currentIndex = index;
 
-            console.log('mediaWorks', mediaWorks);
+           // console.log('mediaWorks', mediaWorks);
            // console.log('mediaWorks', document.querySelector("video"));
-        //    let play = document.querySelector('video');
-        //    console.log("play", play);
+            //    let play = document.querySelector('video');
+            //    console.log("play", play);
            // play.setAttribute(controls);
             document.getElementById('works-lightbox').style.display = 'block';
+            //lightBoxMedia.innerHTML = `${control}`;
             lightBoxMedia.innerHTML = `${src}`;
             lightBoxName.innerHTML = `${nameSrc}`;
         }))
+
 
         this.previous(document.querySelector('.left-arrow-lightbox'), currentMedia, currentMediaName);
         this.next(document.querySelector('.right-arrow-lightbox'), currentMedia, currentMediaName);

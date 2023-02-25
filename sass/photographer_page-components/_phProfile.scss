@@ -97,11 +97,16 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     .ph-profil{
         background-color: #fafafa;
         margin: 0 20px;
 
+    }
+    #ph-contact {
+        position: absolute;
+        top: 40%;
+        left: 45%;
     }
 }
 @media (max-width: 1200px) {

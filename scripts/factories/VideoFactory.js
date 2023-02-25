@@ -8,7 +8,7 @@ export default class VideoFactory {
         eltVideo.setAttribute('title', elt.title);
         eltVideo.setAttribute('aria-hidden', "true");
         eltVideo.setAttribute('aria-label', elt.ariaLabel);
-        // eltVideo.setAttribute(controls);
+        // eltVideo.setAttribute('controls', elt.controls);
         // console.log('eltVideo.setAttribute(controls);', eltVideo.setAttribute('controls', elt.controls));
         eltVideo.setAttribute('role', 'button');
         eltVideo.className = 'ph-media';
