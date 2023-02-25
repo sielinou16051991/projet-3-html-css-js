@@ -15,6 +15,7 @@
 
 }
 
+
 .btn-like {
     background: none;
     border: none;
@@ -40,8 +41,11 @@
     .visibility {
         position: relative;
         top: -40%;
-        right: -40%;
+        right: -45%;
         color: rgb(250, 237, 237);
+    }
+    img + i {
+        display: none;
     }
 }
 

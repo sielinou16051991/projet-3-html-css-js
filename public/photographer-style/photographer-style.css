@@ -1,6 +1,6 @@
 header {
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: -7.5rem;
   margin-top: 2rem;
 }
 header img {
@@ -136,7 +136,7 @@ form header {
   margin: -0.3rem 0.3rem 1rem 0;
 }
 form h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: -2rem;
 }
@@ -172,10 +172,10 @@ form button {
 form input, form textarea {
   border: none;
   border-radius: 0.3rem;
-  font-size: 1rem;
+  font-size: 0.5rem;
 }
 form label {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0.3rem 0 0.2rem;
 }
 form input[data-error]::after {
@@ -370,7 +370,7 @@ form input[data-error]::after {
     color: #fff;
     left: 18.5rem;
     position: absolute;
-    top: 26.4rem;
+    top: 18.8rem;
   }
   .arrow-up-close {
     color: #fff;
@@ -398,7 +398,7 @@ form input[data-error]::after {
     left: 11rem;
     padding: 0.625rem 1.25rem;
     position: absolute;
-    top: 25.6rem;
+    top: 18rem;
     width: 10rem;
     cursor: pointer;
   }
@@ -420,7 +420,7 @@ form input[data-error]::after {
     left: 167px;
     padding: 0;
     position: absolute;
-    top: 385px;
+    top: 18rem;
     width: 11rem;
     z-index: 4;
   }
@@ -472,8 +472,11 @@ form input[data-error]::after {
 .ph-taken-elt .visibility {
   position: relative;
   top: -40%;
-  right: -40%;
+  right: -45%;
   color: rgb(250, 237, 237);
+}
+.ph-taken-elt img + i {
+  display: none;
 }
 
 .ph-taken-elt .fa-heart:hover, .ph-taken-elt img:hover, .ph-taken-elt video:hover {

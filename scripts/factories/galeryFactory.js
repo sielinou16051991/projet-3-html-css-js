@@ -24,9 +24,7 @@ export default class GalleryFactory {
                 let articlePhTeken = document.createElement("article");
                 let mediaHTML = mediaFactory.renderMedia(element);
                 let getVideo = Array.from(document.getElementsByTagName('video'));
-                getVideo.forEach((elt) => {
-                    templateI = `<i class="fa fa-play visibility" aria-hidden="true"></i>`;  
-                });
+               
 
                 console.log('mediaHTML.outerHTML', mediaHTML.outerHTML);
 
@@ -37,8 +35,8 @@ export default class GalleryFactory {
                         ` <!--- CREATION D'UN LIEN IMAGE OU VIDEO  ------>
                          <a href='#' title = ${element.tilte} >
                          ${mediaHTML.outerHTML} 
+                         <i class="fa fa-play visibility" aria-hidden="true"></i>
                          </a> 
-                         <span>${templateI}</span>
 
                          <div class = "ph-taken-elt-text">
                             <h2 class = "ph-taken-title">${element.title}</h2>
@@ -52,7 +50,6 @@ export default class GalleryFactory {
                                 <i class="far fa-heart heart-btn" aria-label='likes' role="button" data-value="${element.likes}"></i>
                             </div>
                          </div>
-                         
                         `
 
 
@@ -67,7 +64,7 @@ export default class GalleryFactory {
 
                        // console.log('sectionPhotosTeken', sectionPhotosTeken);
 
-                        console.log("end forEach galeriFactory");
+                       // console.log("end forEach galeriFactory");
 
                         (new LightBox()).initLightBox(currentMedia, currentMediaName);
 

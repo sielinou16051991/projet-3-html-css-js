@@ -25,6 +25,12 @@ export default class LightBox {
     //    }
    // console.log('currentMedia', currentMedia);
     //console.log('currentMediaName', currentMediaName);
+
+        getMedias.forEach((elt) => {
+
+            console.log('elt', elt);
+        })
+
         getMedias.forEach((mediaWorks, index) => mediaWorks.addEventListener("click", () => {
             // console.log('mediaWorks', mediaWorks, mediaWorks.tagName);
             console.log('index', index);
@@ -32,10 +38,12 @@ export default class LightBox {
             let lightBoxMedia = document.getElementById('works-lightbox-media');
             let lightBoxName = document.getElementById('works-lightbox-name');
             let videoControler = document.querySelector('video');
-            
+            let a;
             if (lightBoxMedia.firstElementChild && lightBoxMedia.firstElementChild.tagName == "VIDEO") {
                 //console.log('mediaWorks', mediaWorks);
                 lightBoxMedia.firstElementChild.setAttribute('controls', true).display;
+                //a=lightBoxMedia.firstElementChild.setAttribute('controls', true).toString();
+                // console.log('a', lightBoxMedia.firstElementChild.setAttribute('controls', true).outerHTML.toString());
 
                 // lightBoxMedia.firstElementChild.setAttribute('controls', lightBoxMedia.firstElementChild.contains);
                 //  && mediaWorks.tagName == 'VIDEO'
@@ -65,6 +73,7 @@ export default class LightBox {
             let src = currentMedia[index];
             let nameSrc = currentMediaName[index];
             this.currentIndex = index;
+           // src= a;
 
              console.log('src', src);
            // console.log('mediaWorks', mediaWorks);
