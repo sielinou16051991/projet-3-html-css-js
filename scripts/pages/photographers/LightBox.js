@@ -8,14 +8,33 @@ export default class LightBox {
     initLightBox(currentMedia, currentMediaName) {
         let getMedias = Array.from(document.getElementsByClassName('ph-media'));
         console.log('getMedias', getMedias);
+        console.log('getMedias.localName', getMedias.localName);
 
+        getMedias.forEach((elt) => {
+            console.log('elt', elt);
+            let articleVideo = document.getElementsByTagName('video');
+            console.log('elt.setAttribute(controls)', articleVideo);
+        })
+    //     if (element.video != undefined) {
+    //         templateI = `<i class="fa fa-play visibility" aria-hidden="true"></i>`;
+            
+    //    }
         getMedias.forEach((mediaWorks, index) => mediaWorks.addEventListener("click", () => {
             let lightBoxMedia = document.getElementById('works-lightbox-media');
             let lightBoxName = document.getElementById('works-lightbox-name');
+            let videoControler = document.querySelector('video');
+            videoControler.setAttribute(videoControler.controls);
+
+            console.log('videoControler', videoControler);
             let src = currentMedia[index];
             let nameSrc = currentMediaName[index];
             this.currentIndex = index;
 
+            console.log('mediaWorks', mediaWorks);
+           // console.log('mediaWorks', document.querySelector("video"));
+        //    let play = document.querySelector('video');
+        //    console.log("play", play);
+           // play.setAttribute(controls);
             document.getElementById('works-lightbox').style.display = 'block';
             lightBoxMedia.innerHTML = `${src}`;
             lightBoxName.innerHTML = `${nameSrc}`;

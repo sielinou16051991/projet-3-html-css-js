@@ -254,7 +254,9 @@ form input[data-error]::after {
   font-size: 1em;
   font-weight: 500;
   height: 35px;
-  position: fixed;
+  position: absolute;
+  top: 60%;
+  left: 40%;
   width: 170PX;
 }
 
@@ -461,6 +463,12 @@ form input[data-error]::after {
   height: 11.875rem;
   object-fit: cover;
   width: 20.9375rem;
+}
+.ph-taken-elt .visibility {
+  position: relative;
+  top: -40%;
+  right: -40%;
+  color: rgb(250, 237, 237);
 }
 
 .ph-taken-elt .fa-heart:hover, .ph-taken-elt img:hover, .ph-taken-elt video:hover {

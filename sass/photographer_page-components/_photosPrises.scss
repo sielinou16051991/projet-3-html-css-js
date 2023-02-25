@@ -13,7 +13,6 @@
         width: 20.9375rem;
     }
 
-
 }
 
 .btn-like {
@@ -36,6 +35,13 @@
         height: 11.875rem;
         object-fit: cover;
         width: 20.9375rem;
+    }
+
+    .visibility {
+        position: relative;
+        top: -40%;
+        right: -40%;
+        color: rgb(250, 237, 237);
     }
 }
 

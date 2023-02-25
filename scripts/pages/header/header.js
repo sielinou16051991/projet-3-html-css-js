@@ -52,10 +52,12 @@ export default class header {
                  </a>
              </ul>
          </nav>
+         <!---
          <a href="#photographers" class="button--forContent"
              id="main-photographers-link">
              Passer au contenu
          </a>
+         --->
          <h1>Nos photographes</h1>
      </header>
       `

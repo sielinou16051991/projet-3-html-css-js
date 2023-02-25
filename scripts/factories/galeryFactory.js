@@ -13,11 +13,12 @@ export default class GalleryFactory {
         let mediaFactory = new MediaFactory();
         let currentMedia = [];
         let currentMediaName = [];
+        let templateI = ``;
 
         dataMedia.forEach(element => {
             console.log('element.photographerId*****', element.photographerId);
             if (id == element.photographerId) {
-                console.log('id == element.photographerId', id == element.photographerId);
+                console.log('id == element.photographerId', element.video);
                 let sectionPhotosTeken = document.getElementById('photos-taken');
                 console.log('*******sectionPhotosTeken', sectionPhotosTeken);
                 let articlePhTeken = document.createElement("article");
@@ -29,9 +30,10 @@ export default class GalleryFactory {
 
                 let tekenTemplate =
                         ` <!--- CREATION D'UN LIEN IMAGE OU VIDEO  ------>
-                         <a href='#' title = "${element.tilte}" >
-                         ${mediaHTML.outerHTML}  
-                         </a>
+                         <a href='#' title = ${element.tilte} >
+                         ${mediaHTML.outerHTML} 
+                         </a> 
+                         <span>${templateI}</span>
 
                          <div class = "ph-taken-elt-text">
                             <h2 class = "ph-taken-title">${element.title}</h2>
@@ -44,7 +46,6 @@ export default class GalleryFactory {
                                 </span>
                                 <i class="far fa-heart heart-btn" aria-label='likes' role="button" data-value="${element.likes}"></i>
                             </div>
-                            
                          </div>
                         `
 
@@ -57,9 +58,11 @@ export default class GalleryFactory {
 
                         console.log('currentMedia', currentMedia);
 
+                        console.log('sectionPhotosTeken', sectionPhotosTeken);
+
                         console.log("end forEach galeriFactory");
 
-                        (new LightBox()).initLightBox(currentMedia, currentMediaName)
+                        (new LightBox()).initLightBox(currentMedia, currentMediaName);
 
             }
         })
