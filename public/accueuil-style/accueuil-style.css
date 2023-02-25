@@ -87,6 +87,7 @@ article img {
 .articlePhotographer ul {
   display: flex;
   flex-flow: wrap;
+  justify-content: center;
 }
 .articlePhotographer ul li:hover,
 .articlePhotographer ul li.actived {
