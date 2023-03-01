@@ -477,6 +477,16 @@ form input[data-error]::after {
 }
 .ph-taken-elt img + i {
   display: none;
+  justify-content: center;
+}
+.ph-taken-elt video + i {
+  content: "";
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  margin-left: -1rem;
+  margin-top: -1.5rem;
 }
 
 .ph-taken-elt .fa-heart:hover, .ph-taken-elt img:hover, .ph-taken-elt video:hover {

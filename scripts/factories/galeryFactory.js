@@ -1,5 +1,6 @@
 import MediaFactory from "./MediaFactory.js";
 import LightBox from "../pages/photographers/LightBox.js";
+import VideoLightBoxFactory from "./VideoLightBoxFactory.js";
 
 export default class GalleryFactory {
     constructor(){
@@ -11,6 +12,7 @@ export default class GalleryFactory {
         console.log("construction de la galerie d'un photographe avec les différents médias et la lightbox");
         const id = window.location.search.split('id=')[1];
         let mediaFactory = new MediaFactory();
+        let videoLightBoxFactory = new VideoLightBoxFactory();
         let currentMedia = [];
         let currentMediaName = [];
         let templateI = ``;
@@ -22,7 +24,9 @@ export default class GalleryFactory {
                 let sectionPhotosTeken = document.getElementById('photos-taken');
                 console.log('*******sectionPhotosTeken', sectionPhotosTeken);
                 let articlePhTeken = document.createElement("article");
-                let mediaHTML = mediaFactory.renderMedia(element);
+                let mediaHTML = mediaFactory.renderMedia(element, 'Galery');
+                let mediaLightBoxHTML = mediaFactory.renderMedia(element, 'LightBox');
+                console.log('mediaHTML', mediaHTML);
                 let getVideo = Array.from(document.getElementsByTagName('video'));
                
 
@@ -52,12 +56,12 @@ export default class GalleryFactory {
                          </div>
                         `
 
-
+ 
                         articlePhTeken.innerHTML = tekenTemplate;
                         sectionPhotosTeken.appendChild(articlePhTeken);
                         articlePhTeken.classList.add("ph-taken-elt");
                         this.totalLike += parseInt(element.likes);
-                        currentMedia.push(mediaHTML.outerHTML);
+                        currentMedia.push(mediaLightBoxHTML.outerHTML);
                         currentMediaName.push(element.title);
 
                         //console.log('currentMedia', currentMedia);

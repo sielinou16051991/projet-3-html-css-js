@@ -41,7 +41,7 @@ export default class LightBox {
             let a;
             if (lightBoxMedia.firstElementChild && lightBoxMedia.firstElementChild.tagName == "VIDEO") {
                 //console.log('mediaWorks', mediaWorks);
-                lightBoxMedia.firstElementChild.setAttribute('controls', true).display;
+                lightBoxMedia.firstElementChild.setAttribute('controls', true);
                 //a=lightBoxMedia.firstElementChild.setAttribute('controls', true).toString();
                 // console.log('a', lightBoxMedia.firstElementChild.setAttribute('controls', true).outerHTML.toString());
 

@@ -46,6 +46,16 @@
     }
     img + i {
         display: none;
+        justify-content: center;
+    }
+    video + i {
+        content: "";
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        margin-left: -1rem;
+        margin-top: -1.5rem;
     }
 }
 
